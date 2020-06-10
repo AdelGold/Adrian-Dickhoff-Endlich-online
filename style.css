@@ -25,35 +25,62 @@ body {
   
 }
 .contents {
+  
+  width: 52vw !important;
   position: fixed !important;
-  top: 10vw !important;
-  width: 100% !important;
-  display: flex !important;
+  top: 10vw !important;  
   left: 10vw !important;
   z-index: 1000 !important;
+  
 
+}
+
+.tabelle {
+  width: 52vw !important;
+  height: 54vw;
+  position: fixed;
+  top: 0vw !important;
+  left: 3vw !important; 
+
+  
 }
 
 .swiper-slide {
  
   background:#eee;
  
-
- 
 }
 
 img {
-  width: 80;
+  
   height: 80%;
   object-fit: contain;
   position: fixed !important;
   top: 4.9vw !important;
-  width: 100% !important;
+  width: 100% ;
   display: flex !important;
   justify-content: center !important;
   z-index: 1000 !important;
   box-shadow: black;
 }
+
+.bilder {
+  height: 80%;
+  object-fit: contain;
+  position: fixed !important;
+  top: 4.9vw !important;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 1000 !important;
+  box-shadow: black;
+  
+}
+.pfeile_start {
+  height: 60%;
+ position: fixed;
+}
+
 
 .slide-text {
 color:rgb(0, 0, 0);
@@ -77,8 +104,8 @@ left: 17vw;
 
 .swiper-button-prev {
   background: url("pictures/arrow_left.png");
-  width: 100px !important;
-  height: 100px !important;
+  width: 9.5vw !important;
+  height: 9.5vw !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
 }
@@ -94,8 +121,8 @@ left: 17vw;
 
 .swiper-button-next {
   background: url("pictures/arrow_right.png");
-  width: 100px !important;
-  height: 100px !important;
+  width: 9.5vw !important;
+  height: 9.5vw !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
 }
@@ -113,6 +140,7 @@ left: 17vw;
   script {
     direction:vertical;
   }
+
   body {
     background: rgb(235, 6, 6);
     font-family: "RotisFilm";
@@ -123,7 +151,7 @@ left: 17vw;
   }
   }
 
-  ooter { text-align: center; position: fixed; bottom: 0; left: 0; z-index: 10; width: 1000vw; }
+
 
  
 
@@ -153,3 +181,126 @@ footer {
   left: 92vw !important;
   z-index: 1000 !important;
 }
+
+.ab_gif {
+
+width: 9.5vw !important;
+height:5.5vw;
+position: fixed;
+right: 1.3vw;
+top: 0vw !important;
+
+}
+
+.about_gif {
+  display: none;
+}
+
+.about:hover + .about_gif {
+  display: block;
+  
+}
+
+.about:hover {
+  background: url("pictures/about.gif");
+}
+.a1 {
+  
+  width: 22vw;
+  height: 22vw;
+  position: fixed; 
+  top: 10vw !important;
+  left: 68vw;
+  animation: show 3.5s steps(1) !important;
+  z-index: 1100 !important;
+}
+
+.a1_box {
+  animation: show 3.5s steps(1) !important;
+}
+
+.a1gif {
+  width: 22vw;
+  height: 22vw;
+  position: fixed; 
+  top: 10vw !important;
+  left: 68vw;
+  z-index: 1100 !important;
+  display: none;
+}
+
+.a1_box::after {
+  display: none;
+}
+
+.a1gif_box {
+  display: none;
+}
+
+.a1_box:hover + .a1gif_box {
+  display: block;
+}
+
+.a2 {
+  width: 22vw;
+  height: 22vw;
+  position: fixed;
+  top: 20vw !important;
+  left: 50vw;
+  animation: show 6s steps(1) !important;
+}
+
+.a3 {
+  width: 22vw;
+  height: 22vw;
+  position: fixed;
+  top: 26vw !important;
+  left: 75vw;
+  animation: show 2s steps(1) !important;
+}
+
+.a4 {
+  width: 22vw;
+  height: 22vw;
+  position: fixed;
+  top: 4vw !important;
+  left: 55vw;
+  animation: show 4s steps(1) !important;
+}
+
+.a5 {
+  width: 22vw;
+  height: 22vw;
+  position: fixed;
+  top: 34vw !important;
+  left: 60vw;
+  animation: show 2.4s steps(1) !important;
+}
+
+.a6 {
+  width: 22vw;
+  height: 22vw;
+  position: fixed;
+  top: 16vw !important;
+  left: 69vw;
+  animation: show 8s steps(1) !important;
+}
+
+.a7 {
+  width: 22vw;
+  height: 22vw;
+  position: fixed;
+  top: 4vw !important;
+  left: 75vw;
+  animation: show 12s steps(1) !important;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
