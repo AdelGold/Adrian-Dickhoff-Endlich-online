@@ -1,0 +1,2021 @@
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: "RotisFilm";
+    font-size: 1.4vw;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: "RotisFilm";
+    src: url("Font/RotisFilm-Regular.otf");
+    font-style: normal;
+    font-weight: 100;
+  }
+  
+  
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  
+  .aboutcontainer {
+    background: red;
+    position: relative !important;
+    top: 5vw !important;
+    width: 9.21428571429vw !important;
+    display: flex !important;
+    left: 70vw !important;
+  }
+    
+  
+  
+  .tabelle {
+    background-color: red;
+    position: relative;
+    top: 8vw;
+    left: 10vw;
+    display: flex;
+    width: 41.5vw;
+    
+  }
+  
+  .contents{
+  position: absolute;
+  }
+  
+  .tabellesvg {
+    position: absolute;
+    top: 1.8vw;
+    left: -0.7vw;
+  }
+  
+  .swiper-slide {
+   
+    background:#eee;
+   
+  }
+  
+  img {
+    
+    height: 80%;
+    object-fit: contain;
+    position: fixed !important;
+    top: 4.9vw !important;
+    width: 100% ;
+    display: flex !important;
+    justify-content: center !important;
+    z-index: 1000 !important;
+    box-shadow: black;
+  }
+  
+  .bilder {
+    height: 80%;
+    object-fit: contain;
+    position: fixed !important;
+    top: 4.9vw !important;
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    z-index: 1000 !important;
+    box-shadow: black;
+    
+  }
+  .pfeile_start {
+    height: 60%;
+   position: fixed;
+  }
+  
+  
+  .slide-text {
+  color:rgb(0, 0, 0);
+  position: relative;
+  top: 4.9vw !important;
+  width: 27vw !important;
+  left: 17vw;
+  
+  }
+  
+  .bottom_text {
+    color:black;
+  
+    position: relative !important;
+    bottom: -15.5vw !important;
+    width: 27vw !important;
+    left: 17vw;
+    z-index: 1000 !important;
+    }
+  
+  
+  .swiper-button-prev {
+    background: url("pictures/arrow_left.png");
+    width: 9.5vw !important;
+    height: 9.5vw !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  
+  .swiper-button-prev::after {
+    display: none;
+  }
+  
+  .swiper-button-prev:hover {
+    background: url("pictures/arrow_left.gif");
+  }
+  
+  .swiper-button-next {
+    background: url("pictures/arrow_right.png");
+    width: 9.5vw !important;
+    height: 9.5vw !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  .swiper-button-next::after {
+    display: none;
+  }
+  
+  .swiper-button-next:hover {
+    background: url("pictures/arrow_right.gif");
+  }
+  
+  @media screen and (max-width: 900px) {
+    script {
+      direction:vertical;
+    }
+  
+    body {
+      background: rgb(235, 6, 6);
+      font-family: "RotisFilm";
+      font-size: 2vw;
+      color: bl;
+      margin: 0;
+      padding: 0;
+    }
+    }
+  
+  
+  
+   
+  
+  footer {
+    position: fixed !important;
+    bottom: 2vw !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    z-index: 1000 !important;
+  }
+  
+  .Name {
+    position: fixed !important;
+    top: 2vw !important;
+    width: 100% !important;
+    display: flex !important;
+    left: 4vw !important;
+    z-index: 1000 !important;
+  }
+  
+  
+  
+/* pfeil1 */
+
+  .wiggle > :nth-child(3) {
+    stroke-width: 0;
+    }
+    .wiggle > :nth-child(4) {
+    stroke-width: 0;
+    }
+    
+    .wiggle > :nth-child(5) {
+    stroke-width: 0;
+    }
+    
+    .wiggle > :nth-child(6) {
+    stroke-width: 0;
+    }
+    .wiggle > :nth-child(7) {
+    stroke-width: 0;
+    }
+    
+    .wiggle > :nth-child(8) {
+    stroke-width: 0;
+    }
+    
+    .wiggle > :nth-child(9) {
+    stroke-width: 0;
+    }
+    
+    .wiggle > :nth-child(10) {
+    stroke-width: 0;
+    }
+    
+    .wiggle > :nth-child(11) {
+    stroke-width: 0;
+    }
+    
+    .wiggle > :nth-child(12) {
+    stroke-width: 0;
+    }
+    
+    
+    .wiggle:hover > * { 
+    stroke-width: 0.2vw;
+    opacity: 0; 
+    animation-duration: 0.5s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: steps(1); 
+    }
+    
+     
+    
+    @keyframes wiggle-3 { 
+    0% { 
+      opacity: 1; 
+    } 
+    20% { 
+      opacity: 0; 
+    } 
+    }   
+    .wiggle > :nth-child(3) {  
+    animation-name: wiggle-3; 
+    }
+    
+    @keyframes wiggle-4 { 
+    0% { 
+      opacity: 1; 
+    } 
+    20% { 
+      opacity: 0; 
+    }  
+    }   
+    .wiggle > :nth-child(4) { 
+    animation-name: wiggle-4; 
+    }  
+    
+    @keyframes wiggle-5 { 
+    20% { 
+      opacity: 1; 
+    } 
+    40% { 
+      opacity: 0; 
+    } 
+    }  
+    .wiggle > :nth-child(5) { 
+    animation-name: wiggle-5; 
+    }  
+    
+    @keyframes wiggle-6 { 
+    20% { 
+      opacity: 1; 
+    } 
+    40% { 
+      opacity: 0; 
+    } 
+    }  
+    .wiggle > :nth-child(6) {  
+    animation-name: wiggle-6; 
+    }
+    
+    @keyframes wiggle-7 { 
+    40% { 
+      opacity: 1; 
+    } 
+    60% { 
+      opacity: 0; 
+    } 
+    }   
+    .wiggle > :nth-child(7) { 
+    animation-name: wiggle-7; 
+    }  
+    
+    @keyframes wiggle-8 { 
+    40% { 
+      opacity: 1; 
+    } 
+    60% { 
+      opacity: 0; 
+    } 
+    }  
+    .wiggle > :nth-child(8) { 
+    animation-name: wiggle-8; 
+    }  
+    
+    @keyframes wiggle-9 { 
+    60% { 
+      opacity: 1; 
+    } 
+    80% { 
+      opacity: 0; 
+    } 
+    }  
+    .wiggle > :nth-child(9) {  
+    animation-name: wiggle-9; 
+    }
+    
+    @keyframes wiggle-10 { 
+    60% { 
+      opacity: 1; 
+    } 
+    80%  { 
+      opacity: 0; 
+    } 
+    }  
+    .wiggle > :nth-child(10) { 
+    animation-name: wiggle-10; 
+    }  
+    
+    @keyframes wiggle-11 { 
+    80%  { 
+      opacity: 1; 
+    } 
+    100% { 
+      opacity: 0; 
+    } 
+    }  
+    .wiggle > :nth-child(11) { 
+    animation-name: wiggle-11; 
+    }  
+    
+    @keyframes wiggle-12 { 
+    80% { 
+      opacity: 1; 
+    } 
+    100% { 
+      opacity: 0; 
+    } 
+    }  
+    .wiggle > :nth-child(12) {  
+      animation-name: wiggle-12; 
+      }
+      
+    
+    
+      .wiggle > :nth-child(1) {
+        stroke-width: 0.2vw;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: zeichnen 1.5s linear forwards;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        
+        }
+      
+      .wiggle > :nth-child(2) {
+        stroke-width: 0.2vw;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: zeichnen 1.2s linear forwards;
+        animation-delay: 2.8s;
+        animation-iteration-count: 1;
+    
+        
+        }
+      
+        @keyframes zeichnen {
+          to {
+            stroke-dashoffset: 000;
+          }
+          }
+
+.pfeil1 {
+  position: absolute;
+  top: 15vw;
+  left: 60vw;
+  
+}
+
+.pfeile {
+  z-index: 1000;
+}
+
+/* pfeil2 */
+
+  .wiggle2 > :nth-child(3) {
+  stroke-width: 0;
+  }
+  .wiggle2 > :nth-child(4) {
+  stroke-width: 0;
+  }
+  
+  .wiggle2 > :nth-child(5) {
+  stroke-width: 0;
+  }
+  
+  .wiggle2 > :nth-child(6) {
+  stroke-width: 0;
+  }
+  .wiggle2 > :nth-child(7) {
+  stroke-width: 0;
+  }
+  
+  .wiggle2 > :nth-child(8) {
+  stroke-width: 0;
+  }
+  
+  .wiggle2 > :nth-child(9) {
+  stroke-width: 0;
+  }
+  
+  .wiggle2 > :nth-child(10) {
+  stroke-width: 0;
+  }
+  
+  .wiggle2 > :nth-child(11) {
+  stroke-width: 0;
+  }
+  
+  .wiggle2 > :nth-child(12) {
+  stroke-width: 0;
+  }
+  
+  
+  .wiggle2:hover > * { 
+  stroke-width: 3;
+  opacity: 0; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: steps(1);  
+  }
+  
+
+  @keyframes wiggle2-3 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle2 > :nth-child(3) {  
+  animation-name: wiggle2-3; 
+  }
+  
+  @keyframes wiggle2-4 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  }   
+  }  
+  .wiggle2 > :nth-child(4) { 
+  animation-name: wiggle2-4; 
+  }  
+  
+  @keyframes wiggle2-5 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle2 > :nth-child(5) { 
+  animation-name: wiggle2-5; 
+  }  
+  
+  @keyframes wiggle2-6 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle2 > :nth-child(6) {  
+  animation-name: wiggle2-6; 
+  }
+  
+  @keyframes wiggle2-7 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }    
+  .wiggle2 > :nth-child(7) { 
+  animation-name: wiggle2-7; 
+  }  
+  
+  @keyframes wiggle2-8 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle2 > :nth-child(8) { 
+  animation-name: wiggle2-8; 
+  }  
+  
+  @keyframes wiggle2-9 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle2 > :nth-child(9) {  
+  animation-name: wiggle2-9; 
+  }
+  
+  @keyframes wiggle2-10 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80%  { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle2 > :nth-child(10) { 
+  animation-name: wiggle2-10; 
+  }  
+  
+  @keyframes wiggle2-11 { 
+  80%  { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle2 > :nth-child(11) { 
+  animation-name: wiggle2-11; 
+  }  
+  
+  @keyframes wiggle2-12 { 
+  80% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle2 > :nth-child(12) {  
+    animation-name: wiggle2-12; 
+  }
+    
+  
+  
+    .wiggle2 > :nth-child(1) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen2 1.5s linear forwards;
+      animation-delay: 15s;
+      animation-iteration-count: 1;
+      
+      }
+    
+    .wiggle2 > :nth-child(2) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen2 1.2s linear forwards;
+      animation-delay: 14.8s;
+      animation-iteration-count: 1;
+  
+      
+      }
+    
+      @keyframes zeichnen2 {
+        to {
+          stroke-dashoffset: 000;
+        }
+        }
+
+.pfeil2 {
+position: absolute;
+top: 30vw;
+left: 60vw;
+
+}
+
+/* pfeil3 */
+
+.wiggle3 > :nth-child(3) {
+  stroke-width: 0;
+  }
+  .wiggle3 > :nth-child(4) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(5) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(6) {
+  stroke-width: 0;
+  }
+  .wiggle3 > :nth-child(7) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(8) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(9) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(10) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(11) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(12) {
+  stroke-width: 0;
+  }
+  
+  
+  .wiggle3:hover > * { 
+  stroke-width: 3;
+  opacity: 0; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: steps(1);  
+  }
+  
+
+  @keyframes wiggle3-3 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(3) {  
+  animation-name: wiggle3-3; 
+  }
+  
+  @keyframes wiggle3-4 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  }   
+  }  
+  .wiggle3 > :nth-child(4) { 
+  animation-name: wiggle3-4; 
+  }  
+  
+  @keyframes wiggle3-5 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(5) { 
+  animation-name: wiggle3-5; 
+  }  
+  
+  @keyframes wiggle3-6 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(6) {  
+  animation-name: wiggle3-6; 
+  }
+  
+  @keyframes wiggle3-7 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }    
+  .wiggle3 > :nth-child(7) { 
+  animation-name: wiggle3-7; 
+  }  
+  
+  @keyframes wiggle3-8 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle3 > :nth-child(8) { 
+  animation-name: wiggle3-8; 
+  }  
+  
+  @keyframes wiggle3-9 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(9) {  
+  animation-name: wiggle3-9; 
+  }
+  
+  @keyframes wiggle3-10 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80%  { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle3 > :nth-child(10) { 
+  animation-name: wiggle3-10; 
+  }  
+  
+  @keyframes wiggle3-11 { 
+  80%  { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(11) { 
+  animation-name: wiggle3-11; 
+  }  
+  
+  @keyframes wiggle3-12 { 
+  80% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(12) {  
+    animation-name: wiggle3-12; 
+  }
+    
+  
+  
+    .wiggle3 > :nth-child(1) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen3 1.5s linear forwards;
+      animation-delay: 9.8s;
+      animation-iteration-count: 1;
+      
+      }
+    
+    .wiggle3 > :nth-child(2) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen3 1.2s linear forwards;
+      animation-delay: 8.6s;
+      animation-iteration-count: 1;
+  
+      
+      }
+    
+      @keyframes zeichnen3 {
+        to {
+          stroke-dashoffset: 000;
+        }
+        }
+
+.pfeil3 {
+position: absolute;
+top: 10vw;
+left: 45vw;
+
+}
+
+/* pfeil3 */
+
+.wiggle3 > :nth-child(3) {
+  stroke-width: 0;
+  }
+  .wiggle3 > :nth-child(4) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(5) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(6) {
+  stroke-width: 0;
+  }
+  .wiggle3 > :nth-child(7) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(8) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(9) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(10) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(11) {
+  stroke-width: 0;
+  }
+  
+  .wiggle3 > :nth-child(12) {
+  stroke-width: 0;
+  }
+  
+  
+  .wiggle3:hover > * { 
+  stroke-width: 0.2vw;
+  opacity: 0; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: steps(1); 
+  }
+  
+   
+  
+  @keyframes wiggle3-3 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle3 > :nth-child(3) {  
+  animation-name: wiggle3-3; 
+  }
+  
+  @keyframes wiggle3-4 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  }  
+  }   
+  .wiggle3 > :nth-child(4) { 
+  animation-name: wiggle3-4; 
+  }  
+  
+  @keyframes wiggle3-5 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(5) { 
+  animation-name: wiggle3-5; 
+  }  
+  
+  @keyframes wiggle3-6 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(6) {  
+  animation-name: wiggle3-6; 
+  }
+  
+  @keyframes wiggle3-7 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle3 > :nth-child(7) { 
+  animation-name: wiggle3-7; 
+  }  
+  
+  @keyframes wiggle3-8 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(8) { 
+  animation-name: wiggle3-8; 
+  }  
+  
+  @keyframes wiggle3-9 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(9) {  
+  animation-name: wiggle3-9; 
+  }
+  
+  @keyframes wiggle3-10 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80%  { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child3(10) { 
+  animation-name: wiggle-10; 
+  }  
+  
+  @keyframes wiggle3-11 { 
+  80%  { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(11) { 
+  animation-name: wiggle3-11; 
+  }  
+  
+  @keyframes wiggle3-12 { 
+  80% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle3 > :nth-child(12) {  
+    animation-name: wiggle3-12; 
+    }
+    
+  
+  
+    .wiggle3 > :nth-child(1) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen3 1.5s linear forwards;
+      animation-delay: 12s;
+      animation-iteration-count: 1;
+      
+      }
+    
+    .wiggle3 > :nth-child(2) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen3 1.2s linear forwards;
+      animation-delay: 13.8s;
+      animation-iteration-count: 1;
+  
+      
+      }
+    
+      @keyframes zeichnen3 {
+        to {
+          stroke-dashoffset: 000;
+        }
+        }
+
+.pfeil3 {
+position: absolute;
+top: 7vw;
+left: 55vw;
+}
+
+/* pfeil4 */
+
+.wiggle4 > :nth-child(3) {
+  stroke-width: 0;
+  }
+  .wiggle4 > :nth-child(4) {
+  stroke-width: 0;
+  }
+  
+  .wiggle4 > :nth-child(5) {
+  stroke-width: 0;
+  }
+  
+  .wiggle4 > :nth-child(6) {
+  stroke-width: 0;
+  }
+  .wiggle4 > :nth-child(7) {
+  stroke-width: 0;
+  }
+  
+  .wiggle4 > :nth-child(8) {
+  stroke-width: 0;
+  }
+  
+  .wiggle4 > :nth-child(9) {
+  stroke-width: 0;
+  }
+  
+  .wiggle4 > :nth-child(10) {
+  stroke-width: 0;
+  }
+  
+  .wiggle4 > :nth-child(11) {
+  stroke-width: 0;
+  }
+  
+  .wiggle4 > :nth-child(12) {
+  stroke-width: 0;
+  }
+  
+  
+  .wiggle4:hover > * { 
+  stroke-width: 0.2vw;
+  opacity: 0; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: steps(1); 
+  }
+  
+   
+  
+  @keyframes wiggle4-3 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle4 > :nth-child(3) {  
+  animation-name: wiggle4-3; 
+  }
+  
+  @keyframes wiggle4-4 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  }  
+  }   
+  .wiggle4 > :nth-child(4) { 
+  animation-name: wiggle4-4; 
+  }  
+  
+  @keyframes wiggle4-5 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle4 > :nth-child(5) { 
+  animation-name: wiggle4-5; 
+  }  
+  
+  @keyframes wiggle4-6 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle4 > :nth-child(6) {  
+  animation-name: wiggle4-6; 
+  }
+  
+  @keyframes wiggle4-7 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle4 > :nth-child(7) { 
+  animation-name: wiggle4-7; 
+  }  
+  
+  @keyframes wiggle4-8 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle4 > :nth-child(8) { 
+  animation-name: wiggle4-8; 
+  }  
+  
+  @keyframes wiggle4-9 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle4 > :nth-child(9) {  
+  animation-name: wiggle4-9; 
+  }
+  
+  @keyframes wiggle4-10 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80%  { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle4 > :nth-child(10) { 
+  animation-name: wiggle4-10; 
+  }  
+  
+  @keyframes wiggle4-11 { 
+  80%  { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle4 > :nth-child(11) { 
+  animation-name: wiggle4-11; 
+  }  
+  
+  @keyframes wiggle4-12 { 
+  80% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle4 > :nth-child(12) {  
+    animation-name: wiggle4-12; 
+    }
+    
+  
+  
+    .wiggle4 > :nth-child(1) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen4 1.5s linear forwards;
+      animation-delay: 6s;
+      animation-iteration-count: 1;
+      
+      }
+    
+    .wiggle4 > :nth-child(2) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen4 1.2s linear forwards;
+      animation-delay: 6.8s;
+      animation-iteration-count: 1;
+  
+      
+      }
+    
+      @keyframes zeichnen4 {
+        to {
+          stroke-dashoffset: 000;
+        }
+        }
+
+.pfeil4 {
+position: absolute;
+top: 15vw;
+left: 60vw;
+
+}
+
+/* pfeil5 */
+
+.wiggle5 > :nth-child(3) {
+  stroke-width: 0;
+  }
+  .wiggle5 > :nth-child(4) {
+  stroke-width: 0;
+  }
+  
+  .wiggle5 > :nth-child(5) {
+  stroke-width: 0;
+  }
+  
+  .wiggle5 > :nth-child(6) {
+  stroke-width: 0;
+  }
+  .wiggle5 > :nth-child(7) {
+  stroke-width: 0;
+  }
+  
+  .wiggle5 > :nth-child(8) {
+  stroke-width: 0;
+  }
+  
+  .wiggle5 > :nth-child(9) {
+  stroke-width: 0;
+  }
+  
+  .wiggle5 > :nth-child(10) {
+  stroke-width: 0;
+  }
+  
+  .wiggle5 > :nth-child(11) {
+  stroke-width: 0;
+  }
+  
+  .wiggle5 > :nth-child(12) {
+  stroke-width: 0;
+  }
+  
+  
+  .wiggle5:hover > * { 
+  stroke-width: 0.2vw;
+  opacity: 0; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: steps(1); 
+  }
+  
+   
+  
+  @keyframes wiggle5-3 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle5 > :nth-child(3) {  
+  animation-name: wiggle5-3; 
+  }
+  
+  @keyframes wiggle5-4 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  }  
+  }   
+  .wiggle5 > :nth-child(4) { 
+  animation-name: wiggle5-4; 
+  }  
+  
+  @keyframes wiggle5-5 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle5 > :nth-child(5) { 
+  animation-name: wiggle5-5; 
+  }  
+  
+  @keyframes wiggle5-6 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle5 > :nth-child(6) {  
+  animation-name: wiggle5-6; 
+  }
+  
+  @keyframes wiggle5-7 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle5 > :nth-child(7) { 
+  animation-name: wiggle5-7; 
+  }  
+  
+  @keyframes wiggle5-8 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle5 > :nth-child(8) { 
+  animation-name: wiggle5-8; 
+  }  
+  
+  @keyframes wiggle5-9 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle5 > :nth-child(9) {  
+  animation-name: wiggle-9; 
+  }
+  
+  @keyframes wiggle5-10 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80%  { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle5 > :nth-child(10) { 
+  animation-name: wiggle5-10; 
+  }  
+  
+  @keyframes wiggle5-11 { 
+  80%  { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle5 > :nth-child(11) { 
+  animation-name: wiggle5-11; 
+  }  
+  
+  @keyframes wiggle5-12 { 
+  80% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle5 > :nth-child(12) {  
+    animation-name: wiggle5-12; 
+    }
+    
+  
+  
+    .wiggle5 > :nth-child(1) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen 1.5s linear forwards;
+      animation-delay: 3s;
+      animation-iteration-count: 1;
+      
+      }
+    
+    .wiggle5 > :nth-child(2) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen5 1.2s linear forwards;
+      animation-delay: 3.8s;
+      animation-iteration-count: 1;
+  
+      
+      }
+    
+      @keyframes zeichnen5 {
+        to {
+          stroke-dashoffset: 000;
+        }
+        }
+
+.pfeil5 {
+position: absolute;
+top: 4vw;
+left: 72vw;
+
+}
+
+/* pfeil6 */
+
+.wiggle6 > :nth-child(3) {
+  stroke-width: 0;
+  }
+  .wiggle6 > :nth-child(4) {
+  stroke-width: 0;
+  }
+  
+  .wiggle6 > :nth-child(5) {
+  stroke-width: 0;
+  }
+  
+  .wiggle6 > :nth-child(6) {
+  stroke-width: 0;
+  }
+  .wiggle6 > :nth-child(7) {
+  stroke-width: 0;
+  }
+  
+  .wiggle6 > :nth-child(8) {
+  stroke-width: 0;
+  }
+  
+  .wiggle6 > :nth-child(9) {
+  stroke-width: 0;
+  }
+  
+  .wiggle6 > :nth-child(10) {
+  stroke-width: 0;
+  }
+  
+  .wiggle6 > :nth-child(11) {
+  stroke-width: 0;
+  }
+  
+  .wiggle6 > :nth-child(12) {
+  stroke-width: 0;
+  }
+  
+  
+  .wiggle6:hover > * { 
+  stroke-width: 0.2vw;
+  opacity: 0; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: steps(1); 
+  }
+  
+   
+  
+  @keyframes wiggle6-3 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle6 > :nth-child(3) {  
+  animation-name: wiggle6-3; 
+  }
+  
+  @keyframes wiggle6-4 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  }  
+  }   
+  .wiggle6 > :nth-child(4) { 
+  animation-name: wiggle6-4; 
+  }  
+  
+  @keyframes wiggle6-5 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle6 > :nth-child(5) { 
+  animation-name: wiggle6-5; 
+  }  
+  
+  @keyframes wiggle6-6 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle6 > :nth-child(6) {  
+  animation-name: wiggle6-6; 
+  }
+  
+  @keyframes wiggle6-7 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }   
+  .wiggle6 > :nth-child(7) { 
+  animation-name: wiggle6-7; 
+  }  
+  
+  @keyframes wiggle6-8 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle6 > :nth-child(8) { 
+  animation-name: wiggle6-8; 
+  }  
+  
+  @keyframes wiggle6-9 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle6 > :nth-child(9) {  
+  animation-name: wiggle6-9; 
+  }
+  
+  @keyframes wiggle6-10 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80%  { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle6 > :nth-child(10) { 
+  animation-name: wiggle6-10; 
+  }  
+  
+  @keyframes wiggle6-11 { 
+  80%  { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle6 > :nth-child(11) { 
+  animation-name: wiggle6-11; 
+  }  
+  
+  @keyframes wiggle6-12 { 
+  80% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+  }  
+  .wiggle6 > :nth-child(12) {  
+    animation-name: wiggle6-12; 
+    }
+    
+  
+  
+    .wiggle6 > :nth-child(1) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen6 1.5s linear forwards;
+      animation-delay: 7s;
+      animation-iteration-count: 1;
+      
+      }
+    
+    .wiggle6 > :nth-child(2) {
+      stroke-width: 0.2vw;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: zeichnen6 1.2s linear forwards;
+      animation-delay: 8.8s;
+      animation-iteration-count: 1;
+  
+      
+      }
+    
+      @keyframes zeichnen6 {
+        to {
+          stroke-dashoffset: 000;
+        }
+        }
+
+.pfeil6 {
+position: absolute;
+top: 40vw;
+left: 54vw;
+
+}
+
+
+  
+/* about */
+
+.hoverabout {
+  
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hoverabout:hover {
+  opacity: 100%;
+}
+
+.aboutwrapper {
+  position: relative !important;
+  top: 1vw !important;
+  width: 9.21428571429vw !important;
+  display: flex !important;
+  left:80vw !important;
+  z-index: 1200;
+}
+
+.about {
+  width: 9.21428571429vw !important;
+  height: 3.92857142857vw;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+  
+}
+
+.about-wiggle > * { 
+  stroke-width: 0.2vw;
+  opacity: 0; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: steps(1);
+  z-index: 100;
+        
+}
+        
+@keyframes about-hover-1 { 
+  0% { 
+    opacity: 1; 
+  } 
+  20% { 
+    opacity: 0; 
+  }  
+}            
+.about-wiggle > :nth-child(1) { 
+  animation-name: about-hover-1; 
+}  
+        
+@keyframes about-hover-2 { 
+  20% { 
+    opacity: 1; 
+  } 
+  40% { 
+    opacity: 0; 
+  } 
+}         
+.about-wiggle > :nth-child(2) { 
+  animation-name: about-hover-2; 
+ }  
+        
+@keyframes about-hover-3 { 
+  40% { 
+    opacity: 1; 
+  } 
+  60% { 
+    opacity: 0; 
+  } 
+}  
+        
+.about-wiggle > :nth-child(3) {  
+  animation-name: about-hover-3; 
+}
+        
+@keyframes about-hover-4 { 
+  60% { 
+    opacity: 1; 
+  } 
+  80% { 
+    opacity: 0; 
+  } 
+}         
+.about-wiggle > :nth-child(4) { 
+  animation-name: about-hover-4; 
+}  
+        
+@keyframes about-hover-5 { 
+  80% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+}        
+.about-wiggle > :nth-child(5) { 
+  animation-name: about-hover-5; 
+}  
+
+/* homenamebutton */
+
+.hovername {
+
+opacity: 0;
+z-index: 1000;
+}
+
+.hovername:hover {
+opacity: 100%;
+}
+
+.namewrapper {
+position: relative !important;
+top: -3vw !important;
+width: 16.2142857143vw !important;
+display: flex !important;
+left:6.5vw !important;
+z-index: 1100;
+background-color: salmon;
+height: 4.21428571429vw;
+
+}
+
+.name {
+width: 18.2142857143vw !important;
+height: 4.21428571429vw;
+position: absolute;
+text-align: center;
+
+}
+
+.name-wiggle > * { 
+stroke-width: 0.2vw;
+opacity: 0; 
+animation-duration: 0.5s; 
+animation-iteration-count: infinite; 
+animation-timing-function: steps(1);
+z-index: 100;
+      
+}
+      
+@keyframes name-hover-1 { 
+0% { 
+  opacity: 1; 
+} 
+20% { 
+  opacity: 0; 
+}  
+}            
+.name-wiggle > :nth-child(1) { 
+animation-name: name-hover-1; 
+}  
+      
+@keyframes name-hover-2 { 
+20% { 
+  opacity: 1; 
+} 
+40% { 
+  opacity: 0; 
+} 
+}         
+.name-wiggle > :nth-child(2) { 
+animation-name: name-hover-2; 
+}  
+      
+@keyframes name-hover-3 { 
+40% { 
+  opacity: 1; 
+} 
+60% { 
+  opacity: 0; 
+} 
+}  
+      
+.name-wiggle > :nth-child(3) {  
+animation-name: name-hover-3; 
+}
+      
+@keyframes name-hover-4 { 
+60% { 
+  opacity: 1; 
+} 
+80% { 
+  opacity: 0; 
+} 
+}         
+.name-wiggle > :nth-child(4) { 
+animation-name: name-hover-4; 
+}  
+      
+@keyframes name-hover-5 { 
+80% { 
+  opacity: 1; 
+} 
+100% { 
+  opacity: 0; 
+} 
+}        
+.name-wiggle > :nth-child(5) { 
+animation-name: name-hover-5; 
+}
+
+/* cunibert */
+
+
+.listewrapper2 {
+position: relative !important;
+width: 38.2857142857vw !important;
+display: flex !important;
+z-index: 1200;
+}
+
+
+.liste2 {
+width: 38.2857142857vw !important; 
+position: absolute;
+text-align: left;
+z-index: 99;
+
+}
+
+.listehover2 { 
+opacity: 0;
+z-index: 1000;
+}
+
+.listehover2:hover {
+opacity: 100%;
+}
+
+.listewiggle2 > * { 
+stroke-width: 0.2vw;
+opacity: 0; 
+animation-duration: 0.5s; 
+animation-iteration-count: infinite; 
+animation-timing-function: steps(1);
+z-index: 100;
+      
+}
+      
+@keyframes listehover2-1 { 
+0% { 
+  opacity: 1; 
+} 
+25% { 
+  opacity: 0; 
+}  
+}            
+.listewiggle2 > :nth-child(1) { 
+animation-name: listehover2-1; 
+}  
+      
+@keyframes listehover2-2 { 
+25% { 
+  opacity: 1; 
+} 
+50% { 
+  opacity: 0; 
+} 
+}         
+.listewiggle2 > :nth-child(2) { 
+animation-name: listehover2-2; 
+}  
+      
+@keyframes listehover2-3 { 
+50% { 
+  opacity: 1; 
+} 
+75% { 
+  opacity: 0; 
+} 
+}         
+.listewiggle2 > :nth-child(3) {  
+animation-name: listehover2-3; 
+}
+      
+@keyframes listehover2-4 { 
+75% { 
+  opacity: 1; 
+} 
+100% { 
+  opacity: 0; 
+} 
+}         
+.listewiggle2 > :nth-child(4) { 
+animation-name: listehover2-4; 
+}  
+      
+
+/* gestalten des rechts */
+
+
+.listewrapper3 {  
+position: relative !important;
+width: 21.2857142857vw !important;
+display: flex !important;
+z-index: 1200;
+}
+
+
+.liste3 {
+width: 21.2857142857vw !important; 
+position: absolute;
+text-align: left;
+z-index: 99;
+
+}
+
+
+.listehover3 {
+opacity: 0;
+z-index: 1000;
+}
+
+.listehover3:hover {
+opacity: 100%;
+}
+
+.listewiggle3 > * { 
+stroke-width: 0.2vw;
+opacity: 0; 
+animation-duration: 0.5s; 
+animation-iteration-count: infinite; 
+animation-timing-function: steps(1);
+z-index: 100;
+      
+}
+      
+@keyframes listehover3-1 { 
+0% { 
+  opacity: 1; 
+} 
+25% { 
+  opacity: 0; 
+}  
+}            
+.listewiggle3 > :nth-child(1) { 
+animation-name: listehover3-1; 
+}  
+      
+@keyframes listehover3-2 { 
+25% { 
+  opacity: 1; 
+} 
+50% { 
+  opacity: 0; 
+} 
+}         
+.listewiggle3 > :nth-child(2) { 
+animation-name: listehover3-2; 
+}  
+      
+@keyframes listehover3-3 { 
+50% { 
+  opacity: 1; 
+} 
+75% { 
+  opacity: 0; 
+} 
+}         
+.listewiggle3 > :nth-child(3) {  
+animation-name: listehover3-3; 
+}
+      
+@keyframes listehover3-4 { 
+75% { 
+  opacity: 1; 
+} 
+100% { 
+  opacity: 0; 
+} 
+}         
+.listewiggle3 > :nth-child(4) { 
+animation-name: listehover3-4; 
+}  
+      
+

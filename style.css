@@ -6,8 +6,8 @@ html, body {
 body {
   background: #eee;
   font-family: "RotisFilm";
-  font-size: 1.25vw;
-  color:#000;
+  font-size: 1.4vw;
+  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -22,85 +22,101 @@ body {
 .swiper-container {
   width: 100%;
   height: 100%;
-  
 }
-.contents {
-  
-  width: 52vw !important;
-  position: fixed !important;
-  top: 10vw !important;  
-  left: 10vw !important;
-  z-index: 1000 !important;
-  
 
+.aboutcontainer {
+  background: red;
+  position: relative !important;
+  top: 5vw !important;
+  width: 9.21428571429vw !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  left: 70vw !important;
 }
 
 .tabelle {
-  width: 52vw !important;
-  height: 54vw;
-  position: fixed;
-  top: 0vw !important;
-  left: 3vw !important; 
+  background-color: red;
+  position: relative;
+  top: 8vw;
+  left: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 41.5vw;
+}
 
-  
+.contents {
+  position: absolute;
+}
+
+.tabellesvg {
+  position: absolute;
+  top: 1.8vw;
+  left: -0.7vw;
 }
 
 .swiper-slide {
- 
-  background:#eee;
- 
+  background: #eee;
 }
 
 img {
-  
   height: 80%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   position: fixed !important;
   top: 4.9vw !important;
-  width: 100% ;
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  justify-content: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
   z-index: 1000 !important;
-  box-shadow: black;
+  -webkit-box-shadow: black;
+          box-shadow: black;
 }
 
 .bilder {
   height: 80%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   position: fixed !important;
   top: 4.9vw !important;
   width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  justify-content: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
   z-index: 1000 !important;
-  box-shadow: black;
-  
+  -webkit-box-shadow: black;
+          box-shadow: black;
 }
+
 .pfeile_start {
   height: 60%;
- position: fixed;
+  position: fixed;
 }
 
-
 .slide-text {
-color:rgb(0, 0, 0);
-position: relative;
-top: 4.9vw !important;
-width: 27vw !important;
-left: 17vw;
-
+  color: black;
+  position: relative;
+  top: 4.9vw !important;
+  width: 27vw !important;
+  left: 17vw;
 }
 
 .bottom_text {
-  color:black;
-
+  color: black;
   position: relative !important;
   bottom: -15.5vw !important;
   width: 27vw !important;
   left: 17vw;
   z-index: 1000 !important;
-  }
-
+}
 
 .swiper-button-prev {
   background: url("pictures/arrow_left.png");
@@ -109,7 +125,6 @@ left: 17vw;
   background-size: contain !important;
   background-repeat: no-repeat !important;
 }
-
 
 .swiper-button-prev::after {
   display: none;
@@ -127,7 +142,6 @@ left: 17vw;
   background-repeat: no-repeat !important;
 }
 
-
 .swiper-button-next::after {
   display: none;
 }
@@ -138,29 +152,28 @@ left: 17vw;
 
 @media screen and (max-width: 900px) {
   script {
-    direction:vertical;
+    direction: vertical;
   }
-
   body {
-    background: rgb(235, 6, 6);
+    background: #eb0606;
     font-family: "RotisFilm";
     font-size: 2vw;
-    color:rgb(240, 0, 0);
+    color: bl;
     margin: 0;
     padding: 0;
   }
-  }
-
-
-
- 
+}
 
 footer {
   position: fixed !important;
   bottom: 2vw !important;
   width: 100% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  justify-content: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
   z-index: 1000 !important;
 }
 
@@ -168,139 +181,2759 @@ footer {
   position: fixed !important;
   top: 2vw !important;
   width: 100% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
   left: 4vw !important;
   z-index: 1000 !important;
 }
 
-.about {
-  position: fixed !important;
-  top: 2vw !important;
-  width: 100% !important;
-  display: flex !important;
-  left: 92vw !important;
-  z-index: 1000 !important;
+/* pfeil1 */
+.wiggle > :nth-child(3) {
+  stroke-width: 0;
 }
 
-.ab_gif {
-
-width: 9.5vw !important;
-height:5.5vw;
-position: fixed;
-right: 1.3vw;
-top: 0vw !important;
-
+.wiggle > :nth-child(4) {
+  stroke-width: 0;
 }
 
-.about_gif {
-  display: none;
+.wiggle > :nth-child(5) {
+  stroke-width: 0;
 }
 
-.about:hover + .about_gif {
-  display: block;
-  
+.wiggle > :nth-child(6) {
+  stroke-width: 0;
 }
 
-.about:hover {
-  background: url("pictures/about.gif");
-}
-.a1 {
-  
-  width: 22vw;
-  height: 22vw;
-  position: fixed; 
-  top: 10vw !important;
-  left: 68vw;
-  animation: show 3.5s steps(1) !important;
-  z-index: 1100 !important;
+.wiggle > :nth-child(7) {
+  stroke-width: 0;
 }
 
-.a1_box {
-  animation: show 3.5s steps(1) !important;
+.wiggle > :nth-child(8) {
+  stroke-width: 0;
 }
 
-.a1gif {
-  width: 22vw;
-  height: 22vw;
-  position: fixed; 
-  top: 10vw !important;
-  left: 68vw;
-  z-index: 1100 !important;
-  display: none;
+.wiggle > :nth-child(9) {
+  stroke-width: 0;
 }
 
-.a1_box::after {
-  display: none;
+.wiggle > :nth-child(10) {
+  stroke-width: 0;
 }
 
-.a1gif_box {
-  display: none;
+.wiggle > :nth-child(11) {
+  stroke-width: 0;
 }
 
-.a1_box:hover + .a1gif_box {
-  display: block;
+.wiggle > :nth-child(12) {
+  stroke-width: 0;
 }
 
-.a2 {
-  width: 22vw;
-  height: 22vw;
-  position: fixed;
-  top: 20vw !important;
-  left: 50vw;
-  animation: show 6s steps(1) !important;
+.wiggle:hover > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
 }
 
-.a3 {
-  width: 22vw;
-  height: 22vw;
-  position: fixed;
-  top: 26vw !important;
-  left: 75vw;
-  animation: show 2s steps(1) !important;
-}
-
-.a4 {
-  width: 22vw;
-  height: 22vw;
-  position: fixed;
-  top: 4vw !important;
-  left: 55vw;
-  animation: show 4s steps(1) !important;
-}
-
-.a5 {
-  width: 22vw;
-  height: 22vw;
-  position: fixed;
-  top: 34vw !important;
-  left: 60vw;
-  animation: show 2.4s steps(1) !important;
-}
-
-.a6 {
-  width: 22vw;
-  height: 22vw;
-  position: fixed;
-  top: 16vw !important;
-  left: 69vw;
-  animation: show 8s steps(1) !important;
-}
-
-.a7 {
-  width: 22vw;
-  height: 22vw;
-  position: fixed;
-  top: 4vw !important;
-  left: 75vw;
-  animation: show 12s steps(1) !important;
-}
-
-@keyframes show {
+@-webkit-keyframes wiggle-3 {
   0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
+  20% {
+    opacity: 0;
+  }
 }
 
+@keyframes wiggle-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(3) {
+  -webkit-animation-name: wiggle-3;
+          animation-name: wiggle-3;
+}
+
+@-webkit-keyframes wiggle-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(4) {
+  -webkit-animation-name: wiggle-4;
+          animation-name: wiggle-4;
+}
+
+@-webkit-keyframes wiggle-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(5) {
+  -webkit-animation-name: wiggle-5;
+          animation-name: wiggle-5;
+}
+
+@-webkit-keyframes wiggle-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(6) {
+  -webkit-animation-name: wiggle-6;
+          animation-name: wiggle-6;
+}
+
+@-webkit-keyframes wiggle-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(7) {
+  -webkit-animation-name: wiggle-7;
+          animation-name: wiggle-7;
+}
+
+@-webkit-keyframes wiggle-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(8) {
+  -webkit-animation-name: wiggle-8;
+          animation-name: wiggle-8;
+}
+
+@-webkit-keyframes wiggle-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(9) {
+  -webkit-animation-name: wiggle-9;
+          animation-name: wiggle-9;
+}
+
+@-webkit-keyframes wiggle-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(10) {
+  -webkit-animation-name: wiggle-10;
+          animation-name: wiggle-10;
+}
+
+@-webkit-keyframes wiggle-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(11) {
+  -webkit-animation-name: wiggle-11;
+          animation-name: wiggle-11;
+}
+
+@-webkit-keyframes wiggle-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle > :nth-child(12) {
+  -webkit-animation-name: wiggle-12;
+          animation-name: wiggle-12;
+}
+
+.wiggle > :nth-child(1) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen 1.5s linear forwards;
+          animation: zeichnen 1.5s linear forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.wiggle > :nth-child(2) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen 1.2s linear forwards;
+          animation: zeichnen 1.2s linear forwards;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zeichnen {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+@keyframes zeichnen {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+.pfeil1 {
+  position: absolute;
+  top: 15vw;
+  left: 60vw;
+}
+
+.pfeile {
+  z-index: 1000;
+}
+
+/* pfeil2 */
+.wiggle2 > :nth-child(3) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(4) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(5) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(6) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(7) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(8) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(9) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(10) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(11) {
+  stroke-width: 0;
+}
+
+.wiggle2 > :nth-child(12) {
+  stroke-width: 0;
+}
+
+.wiggle2:hover > * {
+  stroke-width: 3;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+}
+
+@-webkit-keyframes wiggle2-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(3) {
+  -webkit-animation-name: wiggle2-3;
+          animation-name: wiggle2-3;
+}
+
+@-webkit-keyframes wiggle2-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(4) {
+  -webkit-animation-name: wiggle2-4;
+          animation-name: wiggle2-4;
+}
+
+@-webkit-keyframes wiggle2-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(5) {
+  -webkit-animation-name: wiggle2-5;
+          animation-name: wiggle2-5;
+}
+
+@-webkit-keyframes wiggle2-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(6) {
+  -webkit-animation-name: wiggle2-6;
+          animation-name: wiggle2-6;
+}
+
+@-webkit-keyframes wiggle2-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(7) {
+  -webkit-animation-name: wiggle2-7;
+          animation-name: wiggle2-7;
+}
+
+@-webkit-keyframes wiggle2-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(8) {
+  -webkit-animation-name: wiggle2-8;
+          animation-name: wiggle2-8;
+}
+
+@-webkit-keyframes wiggle2-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(9) {
+  -webkit-animation-name: wiggle2-9;
+          animation-name: wiggle2-9;
+}
+
+@-webkit-keyframes wiggle2-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(10) {
+  -webkit-animation-name: wiggle2-10;
+          animation-name: wiggle2-10;
+}
+
+@-webkit-keyframes wiggle2-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(11) {
+  -webkit-animation-name: wiggle2-11;
+          animation-name: wiggle2-11;
+}
+
+@-webkit-keyframes wiggle2-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle2-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle2 > :nth-child(12) {
+  -webkit-animation-name: wiggle2-12;
+          animation-name: wiggle2-12;
+}
+
+.wiggle2 > :nth-child(1) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen2 1.5s linear forwards;
+          animation: zeichnen2 1.5s linear forwards;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.wiggle2 > :nth-child(2) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen2 1.2s linear forwards;
+          animation: zeichnen2 1.2s linear forwards;
+  -webkit-animation-delay: 14.8s;
+          animation-delay: 14.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zeichnen2 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+@keyframes zeichnen2 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+.pfeil2 {
+  position: absolute;
+  top: 30vw;
+  left: 60vw;
+}
+
+/* pfeil3 */
+.wiggle3 > :nth-child(3) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(4) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(5) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(6) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(7) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(8) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(9) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(10) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(11) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(12) {
+  stroke-width: 0;
+}
+
+.wiggle3:hover > * {
+  stroke-width: 3;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+}
+
+@-webkit-keyframes wiggle3-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(3) {
+  -webkit-animation-name: wiggle3-3;
+          animation-name: wiggle3-3;
+}
+
+@-webkit-keyframes wiggle3-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(4) {
+  -webkit-animation-name: wiggle3-4;
+          animation-name: wiggle3-4;
+}
+
+@-webkit-keyframes wiggle3-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(5) {
+  -webkit-animation-name: wiggle3-5;
+          animation-name: wiggle3-5;
+}
+
+@-webkit-keyframes wiggle3-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(6) {
+  -webkit-animation-name: wiggle3-6;
+          animation-name: wiggle3-6;
+}
+
+@-webkit-keyframes wiggle3-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(7) {
+  -webkit-animation-name: wiggle3-7;
+          animation-name: wiggle3-7;
+}
+
+@-webkit-keyframes wiggle3-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(8) {
+  -webkit-animation-name: wiggle3-8;
+          animation-name: wiggle3-8;
+}
+
+@-webkit-keyframes wiggle3-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(9) {
+  -webkit-animation-name: wiggle3-9;
+          animation-name: wiggle3-9;
+}
+
+@-webkit-keyframes wiggle3-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(10) {
+  -webkit-animation-name: wiggle3-10;
+          animation-name: wiggle3-10;
+}
+
+@-webkit-keyframes wiggle3-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(11) {
+  -webkit-animation-name: wiggle3-11;
+          animation-name: wiggle3-11;
+}
+
+@-webkit-keyframes wiggle3-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle3-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(12) {
+  -webkit-animation-name: wiggle3-12;
+          animation-name: wiggle3-12;
+}
+
+.wiggle3 > :nth-child(1) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen3 1.5s linear forwards;
+          animation: zeichnen3 1.5s linear forwards;
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.wiggle3 > :nth-child(2) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen3 1.2s linear forwards;
+          animation: zeichnen3 1.2s linear forwards;
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zeichnen3 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+@keyframes zeichnen3 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+.pfeil3 {
+  position: absolute;
+  top: 10vw;
+  left: 45vw;
+}
+
+/* pfeil3 */
+.wiggle3 > :nth-child(3) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(4) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(5) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(6) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(7) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(8) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(9) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(10) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(11) {
+  stroke-width: 0;
+}
+
+.wiggle3 > :nth-child(12) {
+  stroke-width: 0;
+}
+
+.wiggle3:hover > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+}
+
+@keyframes wiggle3-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(3) {
+  -webkit-animation-name: wiggle3-3;
+          animation-name: wiggle3-3;
+}
+
+@keyframes wiggle3-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(4) {
+  -webkit-animation-name: wiggle3-4;
+          animation-name: wiggle3-4;
+}
+
+@keyframes wiggle3-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(5) {
+  -webkit-animation-name: wiggle3-5;
+          animation-name: wiggle3-5;
+}
+
+@keyframes wiggle3-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(6) {
+  -webkit-animation-name: wiggle3-6;
+          animation-name: wiggle3-6;
+}
+
+@keyframes wiggle3-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(7) {
+  -webkit-animation-name: wiggle3-7;
+          animation-name: wiggle3-7;
+}
+
+@keyframes wiggle3-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(8) {
+  -webkit-animation-name: wiggle3-8;
+          animation-name: wiggle3-8;
+}
+
+@keyframes wiggle3-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(9) {
+  -webkit-animation-name: wiggle3-9;
+          animation-name: wiggle3-9;
+}
+
+@keyframes wiggle3-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child3(10) {
+  -webkit-animation-name: wiggle-10;
+          animation-name: wiggle-10;
+}
+
+@keyframes wiggle3-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(11) {
+  -webkit-animation-name: wiggle3-11;
+          animation-name: wiggle3-11;
+}
+
+@keyframes wiggle3-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle3 > :nth-child(12) {
+  -webkit-animation-name: wiggle3-12;
+          animation-name: wiggle3-12;
+}
+
+.wiggle3 > :nth-child(1) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen3 1.5s linear forwards;
+          animation: zeichnen3 1.5s linear forwards;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.wiggle3 > :nth-child(2) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen3 1.2s linear forwards;
+          animation: zeichnen3 1.2s linear forwards;
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@keyframes zeichnen3 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+.pfeil3 {
+  position: absolute;
+  top: 7vw;
+  left: 55vw;
+}
+
+/* pfeil4 */
+.wiggle4 > :nth-child(3) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(4) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(5) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(6) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(7) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(8) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(9) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(10) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(11) {
+  stroke-width: 0;
+}
+
+.wiggle4 > :nth-child(12) {
+  stroke-width: 0;
+}
+
+.wiggle4:hover > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+}
+
+@-webkit-keyframes wiggle4-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(3) {
+  -webkit-animation-name: wiggle4-3;
+          animation-name: wiggle4-3;
+}
+
+@-webkit-keyframes wiggle4-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(4) {
+  -webkit-animation-name: wiggle4-4;
+          animation-name: wiggle4-4;
+}
+
+@-webkit-keyframes wiggle4-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(5) {
+  -webkit-animation-name: wiggle4-5;
+          animation-name: wiggle4-5;
+}
+
+@-webkit-keyframes wiggle4-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(6) {
+  -webkit-animation-name: wiggle4-6;
+          animation-name: wiggle4-6;
+}
+
+@-webkit-keyframes wiggle4-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(7) {
+  -webkit-animation-name: wiggle4-7;
+          animation-name: wiggle4-7;
+}
+
+@-webkit-keyframes wiggle4-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(8) {
+  -webkit-animation-name: wiggle4-8;
+          animation-name: wiggle4-8;
+}
+
+@-webkit-keyframes wiggle4-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(9) {
+  -webkit-animation-name: wiggle4-9;
+          animation-name: wiggle4-9;
+}
+
+@-webkit-keyframes wiggle4-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(10) {
+  -webkit-animation-name: wiggle4-10;
+          animation-name: wiggle4-10;
+}
+
+@-webkit-keyframes wiggle4-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(11) {
+  -webkit-animation-name: wiggle4-11;
+          animation-name: wiggle4-11;
+}
+
+@-webkit-keyframes wiggle4-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle4-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle4 > :nth-child(12) {
+  -webkit-animation-name: wiggle4-12;
+          animation-name: wiggle4-12;
+}
+
+.wiggle4 > :nth-child(1) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen4 1.5s linear forwards;
+          animation: zeichnen4 1.5s linear forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.wiggle4 > :nth-child(2) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen4 1.2s linear forwards;
+          animation: zeichnen4 1.2s linear forwards;
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zeichnen4 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+@keyframes zeichnen4 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+.pfeil4 {
+  position: absolute;
+  top: 15vw;
+  left: 60vw;
+}
+
+/* pfeil5 */
+.wiggle5 > :nth-child(3) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(4) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(5) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(6) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(7) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(8) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(9) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(10) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(11) {
+  stroke-width: 0;
+}
+
+.wiggle5 > :nth-child(12) {
+  stroke-width: 0;
+}
+
+.wiggle5:hover > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+}
+
+@-webkit-keyframes wiggle5-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(3) {
+  -webkit-animation-name: wiggle5-3;
+          animation-name: wiggle5-3;
+}
+
+@-webkit-keyframes wiggle5-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(4) {
+  -webkit-animation-name: wiggle5-4;
+          animation-name: wiggle5-4;
+}
+
+@-webkit-keyframes wiggle5-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(5) {
+  -webkit-animation-name: wiggle5-5;
+          animation-name: wiggle5-5;
+}
+
+@-webkit-keyframes wiggle5-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(6) {
+  -webkit-animation-name: wiggle5-6;
+          animation-name: wiggle5-6;
+}
+
+@-webkit-keyframes wiggle5-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(7) {
+  -webkit-animation-name: wiggle5-7;
+          animation-name: wiggle5-7;
+}
+
+@-webkit-keyframes wiggle5-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(8) {
+  -webkit-animation-name: wiggle5-8;
+          animation-name: wiggle5-8;
+}
+
+@-webkit-keyframes wiggle5-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(9) {
+  -webkit-animation-name: wiggle-9;
+          animation-name: wiggle-9;
+}
+
+@-webkit-keyframes wiggle5-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(10) {
+  -webkit-animation-name: wiggle5-10;
+          animation-name: wiggle5-10;
+}
+
+@-webkit-keyframes wiggle5-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(11) {
+  -webkit-animation-name: wiggle5-11;
+          animation-name: wiggle5-11;
+}
+
+@-webkit-keyframes wiggle5-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle5-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle5 > :nth-child(12) {
+  -webkit-animation-name: wiggle5-12;
+          animation-name: wiggle5-12;
+}
+
+.wiggle5 > :nth-child(1) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen 1.5s linear forwards;
+          animation: zeichnen 1.5s linear forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.wiggle5 > :nth-child(2) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen5 1.2s linear forwards;
+          animation: zeichnen5 1.2s linear forwards;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zeichnen5 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+@keyframes zeichnen5 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+.pfeil5 {
+  position: absolute;
+  top: 4vw;
+  left: 72vw;
+}
+
+/* pfeil6 */
+.wiggle6 > :nth-child(3) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(4) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(5) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(6) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(7) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(8) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(9) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(10) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(11) {
+  stroke-width: 0;
+}
+
+.wiggle6 > :nth-child(12) {
+  stroke-width: 0;
+}
+
+.wiggle6:hover > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+}
+
+@-webkit-keyframes wiggle6-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-3 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(3) {
+  -webkit-animation-name: wiggle6-3;
+          animation-name: wiggle6-3;
+}
+
+@-webkit-keyframes wiggle6-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-4 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(4) {
+  -webkit-animation-name: wiggle6-4;
+          animation-name: wiggle6-4;
+}
+
+@-webkit-keyframes wiggle6-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-5 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(5) {
+  -webkit-animation-name: wiggle6-5;
+          animation-name: wiggle6-5;
+}
+
+@-webkit-keyframes wiggle6-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-6 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(6) {
+  -webkit-animation-name: wiggle6-6;
+          animation-name: wiggle6-6;
+}
+
+@-webkit-keyframes wiggle6-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-7 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(7) {
+  -webkit-animation-name: wiggle6-7;
+          animation-name: wiggle6-7;
+}
+
+@-webkit-keyframes wiggle6-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-8 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(8) {
+  -webkit-animation-name: wiggle6-8;
+          animation-name: wiggle6-8;
+}
+
+@-webkit-keyframes wiggle6-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-9 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(9) {
+  -webkit-animation-name: wiggle6-9;
+          animation-name: wiggle6-9;
+}
+
+@-webkit-keyframes wiggle6-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-10 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(10) {
+  -webkit-animation-name: wiggle6-10;
+          animation-name: wiggle6-10;
+}
+
+@-webkit-keyframes wiggle6-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-11 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(11) {
+  -webkit-animation-name: wiggle6-11;
+          animation-name: wiggle6-11;
+}
+
+@-webkit-keyframes wiggle6-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle6-12 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wiggle6 > :nth-child(12) {
+  -webkit-animation-name: wiggle6-12;
+          animation-name: wiggle6-12;
+}
+
+.wiggle6 > :nth-child(1) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen6 1.5s linear forwards;
+          animation: zeichnen6 1.5s linear forwards;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.wiggle6 > :nth-child(2) {
+  stroke-width: 0.2vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: zeichnen6 1.2s linear forwards;
+          animation: zeichnen6 1.2s linear forwards;
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes zeichnen6 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+@keyframes zeichnen6 {
+  to {
+    stroke-dashoffset: 000;
+  }
+}
+
+.pfeil6 {
+  position: absolute;
+  top: 40vw;
+  left: 54vw;
+}
+
+/* about */
+.hoverabout {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hoverabout:hover {
+  opacity: 100%;
+}
+
+.aboutwrapper {
+  position: relative !important;
+  top: 1vw !important;
+  width: 9.21428571429vw !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  left: 80vw !important;
+  z-index: 1200;
+}
+
+.about {
+  width: 9.21428571429vw !important;
+  height: 3.92857142857vw;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+
+.about-wiggle > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes about-hover-1 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes about-hover-1 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.about-wiggle > :nth-child(1) {
+  -webkit-animation-name: about-hover-1;
+          animation-name: about-hover-1;
+}
+
+@-webkit-keyframes about-hover-2 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes about-hover-2 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.about-wiggle > :nth-child(2) {
+  -webkit-animation-name: about-hover-2;
+          animation-name: about-hover-2;
+}
+
+@-webkit-keyframes about-hover-3 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes about-hover-3 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.about-wiggle > :nth-child(3) {
+  -webkit-animation-name: about-hover-3;
+          animation-name: about-hover-3;
+}
+
+@-webkit-keyframes about-hover-4 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes about-hover-4 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.about-wiggle > :nth-child(4) {
+  -webkit-animation-name: about-hover-4;
+          animation-name: about-hover-4;
+}
+
+@-webkit-keyframes about-hover-5 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes about-hover-5 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.about-wiggle > :nth-child(5) {
+  -webkit-animation-name: about-hover-5;
+          animation-name: about-hover-5;
+}
+
+/* homenamebutton */
+.hovername {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovername:hover {
+  opacity: 100%;
+}
+
+.namewrapper {
+  position: relative !important;
+  top: -3vw !important;
+  width: 16.2142857143vw !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  left: 6.5vw !important;
+  z-index: 1100;
+  background-color: salmon;
+  height: 4.21428571429vw;
+}
+
+.name {
+  width: 18.2142857143vw !important;
+  height: 4.21428571429vw;
+  position: absolute;
+  text-align: center;
+}
+
+.name-wiggle > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes name-hover-1 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes name-hover-1 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+.name-wiggle > :nth-child(1) {
+  -webkit-animation-name: name-hover-1;
+          animation-name: name-hover-1;
+}
+
+@-webkit-keyframes name-hover-2 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes name-hover-2 {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+.name-wiggle > :nth-child(2) {
+  -webkit-animation-name: name-hover-2;
+          animation-name: name-hover-2;
+}
+
+@-webkit-keyframes name-hover-3 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes name-hover-3 {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.name-wiggle > :nth-child(3) {
+  -webkit-animation-name: name-hover-3;
+          animation-name: name-hover-3;
+}
+
+@-webkit-keyframes name-hover-4 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes name-hover-4 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.name-wiggle > :nth-child(4) {
+  -webkit-animation-name: name-hover-4;
+          animation-name: name-hover-4;
+}
+
+@-webkit-keyframes name-hover-5 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes name-hover-5 {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.name-wiggle > :nth-child(5) {
+  -webkit-animation-name: name-hover-5;
+          animation-name: name-hover-5;
+}
+
+/* cunibert */
+.listewrapper2 {
+  position: relative !important;
+  width: 38.2857142857vw !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+}
+
+.liste2 {
+  width: 38.2857142857vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listehover2 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover2:hover {
+  opacity: 100%;
+}
+
+.listewiggle2 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover2-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover2-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle2 > :nth-child(1) {
+  -webkit-animation-name: listehover2-1;
+          animation-name: listehover2-1;
+}
+
+@-webkit-keyframes listehover2-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover2-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle2 > :nth-child(2) {
+  -webkit-animation-name: listehover2-2;
+          animation-name: listehover2-2;
+}
+
+@-webkit-keyframes listehover2-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover2-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle2 > :nth-child(3) {
+  -webkit-animation-name: listehover2-3;
+          animation-name: listehover2-3;
+}
+
+@-webkit-keyframes listehover2-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover2-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle2 > :nth-child(4) {
+  -webkit-animation-name: listehover2-4;
+          animation-name: listehover2-4;
+}
+
+/* gestalten des rechts */
+.listewrapper3 {
+  position: relative !important;
+  width: 21.2857142857vw !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+}
+
+.liste3 {
+  width: 21.2857142857vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listehover3 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover3:hover {
+  opacity: 100%;
+}
+
+.listewiggle3 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover3-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover3-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle3 > :nth-child(1) {
+  -webkit-animation-name: listehover3-1;
+          animation-name: listehover3-1;
+}
+
+@-webkit-keyframes listehover3-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover3-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle3 > :nth-child(2) {
+  -webkit-animation-name: listehover3-2;
+          animation-name: listehover3-2;
+}
+
+@-webkit-keyframes listehover3-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover3-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle3 > :nth-child(3) {
+  -webkit-animation-name: listehover3-3;
+          animation-name: listehover3-3;
+}
+
+@-webkit-keyframes listehover3-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover3-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle3 > :nth-child(4) {
+  -webkit-animation-name: listehover3-4;
+          animation-name: listehover3-4;
+}
+/*# sourceMappingURL=style.css.map */
