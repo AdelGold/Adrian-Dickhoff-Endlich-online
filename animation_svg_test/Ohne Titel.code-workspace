@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../Portfolio_webseite"
+		},
+		{
+			"path": "../Swiper"
+		},
+		{
+			"path": "../swiper_test"
+		},
+		{
+			"path": "../GitHub/Adrian-Dickhoff-Endlich-online"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../noanimation_dog_ball"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "animation_dog_ball"
+	}
+}
