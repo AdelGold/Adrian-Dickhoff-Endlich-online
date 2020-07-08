@@ -1,3 +1,13 @@
+.startseite1 {
+  z-index: 1200;
+}
+
+.about-text {
+  position: relative;
+  top: 10vw;
+  left: 15vw;
+}
+
 footer {
   position: fixed !important;
   bottom: 2vw !important;
