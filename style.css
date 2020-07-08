@@ -1,6 +1,36 @@
+footer {
+  position: fixed !important;
+  bottom: 2vw !important;
+  width: 100% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  z-index: 1000 !important;
+}
+
+div.disabled {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 html, body {
   position: relative;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  z-index: 300;
+  position: absolute;
 }
 
 body {
@@ -25,7 +55,6 @@ body {
 }
 
 .aboutcontainer {
-  background: red;
   position: relative !important;
   top: 5vw !important;
   width: 9.21428571429vw !important;
@@ -35,11 +64,14 @@ body {
   left: 70vw !important;
 }
 
+.cunibert1 {
+  position: absolute;
+  left: 30vw;
+}
+
+/* tabelle seite 1 */
 .tabelle {
-  background-color: red;
   position: relative;
-  top: 8vw;
-  left: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,12 +80,21 @@ body {
 
 .contents {
   position: absolute;
+  left: 0.7vw;
+  top: 3vw;
+  top: 8vw;
+  left: 10vw;
 }
 
 .tabellesvg {
   position: absolute;
   top: 1.8vw;
-  left: -0.7vw;
+  width: 41.5vw;
+  height: auto;
+}
+
+ol, li {
+  line-height: 3vw;
 }
 
 .swiper-slide {
@@ -61,11 +102,11 @@ body {
 }
 
 img {
-  height: 80%;
+  height: 95%;
   -o-object-fit: contain;
      object-fit: contain;
   position: fixed !important;
-  top: 4.9vw !important;
+  top: 2.1vw !important;
   width: 100%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -74,8 +115,6 @@ img {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   z-index: 1000 !important;
-  -webkit-box-shadow: black;
-          box-shadow: black;
 }
 
 .bilder {
@@ -92,8 +131,8 @@ img {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   z-index: 1000 !important;
-  -webkit-box-shadow: black;
-          box-shadow: black;
+  -webkit-filter: drop-shadow(0 0 30px #333) !important;
+          filter: drop-shadow(0 0 30px #333) !important;
 }
 
 .pfeile_start {
@@ -112,7 +151,7 @@ img {
 .bottom_text {
   color: black;
   position: relative !important;
-  bottom: -15.5vw !important;
+  bottom: -5.5vw !important;
   width: 27vw !important;
   left: 17vw;
   z-index: 1000 !important;
@@ -140,6 +179,8 @@ img {
   height: 9.5vw !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
+  display: none;
+  opacity: none;
 }
 
 .swiper-button-next::after {
@@ -148,44 +189,6 @@ img {
 
 .swiper-button-next:hover {
   background: url("pictures/arrow_right.gif");
-}
-
-@media screen and (max-width: 900px) {
-  script {
-    direction: vertical;
-  }
-  body {
-    background: #eb0606;
-    font-family: "RotisFilm";
-    font-size: 2vw;
-    color: bl;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-footer {
-  position: fixed !important;
-  bottom: 2vw !important;
-  width: 100% !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-  z-index: 1000 !important;
-}
-
-.Name {
-  position: fixed !important;
-  top: 2vw !important;
-  width: 100% !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  left: 4vw !important;
-  z-index: 1000 !important;
 }
 
 /* pfeil1 */
@@ -508,7 +511,7 @@ footer {
 
 .pfeil1 {
   position: absolute;
-  top: 15vw;
+  top: 17vw;
   left: 60vw;
 }
 
@@ -1388,7 +1391,7 @@ footer {
 
 .pfeil3 {
   position: absolute;
-  top: 7vw;
+  top: 3vw;
   left: 55vw;
 }
 
@@ -1712,8 +1715,8 @@ footer {
 
 .pfeil4 {
   position: absolute;
-  top: 15vw;
-  left: 60vw;
+  top: 10vw;
+  left: 72vw;
 }
 
 /* pfeil5 */
@@ -2036,7 +2039,7 @@ footer {
 
 .pfeil5 {
   position: absolute;
-  top: 4vw;
+  top: 38vw;
   left: 72vw;
 }
 
@@ -2328,8 +2331,8 @@ footer {
   stroke-dashoffset: 1000;
   -webkit-animation: zeichnen6 1.5s linear forwards;
           animation: zeichnen6 1.5s linear forwards;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
@@ -2340,8 +2343,8 @@ footer {
   stroke-dashoffset: 1000;
   -webkit-animation: zeichnen6 1.2s linear forwards;
           animation: zeichnen6 1.2s linear forwards;
-  -webkit-animation-delay: 8.8s;
-          animation-delay: 8.8s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
@@ -2360,8 +2363,8 @@ footer {
 
 .pfeil6 {
   position: absolute;
-  top: 40vw;
-  left: 54vw;
+  top: 41vw;
+  left: 51vw;
 }
 
 /* about */
@@ -2378,19 +2381,19 @@ footer {
   position: relative !important;
   top: 1vw !important;
   width: 9.21428571429vw !important;
+  height: 4.21428571429vw;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  left: 80vw !important;
-  z-index: 1200;
+  left: 87vw !important;
 }
 
 .about {
   width: 9.21428571429vw !important;
-  height: 3.92857142857vw;
+  height: 4.21428571429vw;
   position: absolute;
   text-align: center;
-  z-index: 99;
+  z-index: 999;
 }
 
 .about-wiggle > * {
@@ -2402,7 +2405,7 @@ footer {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: steps(1);
           animation-timing-function: steps(1);
-  z-index: 100;
+  z-index: 1000;
 }
 
 @-webkit-keyframes about-hover-1 {
@@ -2532,15 +2535,13 @@ footer {
 
 .namewrapper {
   position: relative !important;
-  top: -3vw !important;
+  top: -3.21429vw !important;
   width: 16.2142857143vw !important;
+  height: 4.21428571429vw;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  left: 6.5vw !important;
-  z-index: 1100;
-  background-color: salmon;
-  height: 4.21428571429vw;
+  left: 3.5vw !important;
 }
 
 .name {
@@ -2548,6 +2549,8 @@ footer {
   height: 4.21428571429vw;
   position: absolute;
   text-align: center;
+  left: -1vw;
+  z-index: 99;
 }
 
 .name-wiggle > * {
@@ -2559,7 +2562,7 @@ footer {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: steps(1);
           animation-timing-function: steps(1);
-  z-index: 100;
+  z-index: 1000;
 }
 
 @-webkit-keyframes name-hover-1 {
@@ -2677,10 +2680,148 @@ footer {
           animation-name: name-hover-5;
 }
 
+/* Rotis Film */
+.listewrapper1 {
+  position: relative !important;
+  width: 13.0714285714vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.liste1 {
+  width: 13.0714285714vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listesvg1 {
+  position: absolute;
+  top: -1vw;
+}
+
+.listehover1 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover1:hover {
+  opacity: 100%;
+}
+
+.listewiggle1 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover1-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover1-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle1 > :nth-child(1) {
+  -webkit-animation-name: listehover1-1;
+          animation-name: listehover1-1;
+}
+
+@-webkit-keyframes listehover1-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover1-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle1 > :nth-child(2) {
+  -webkit-animation-name: listehover1-2;
+          animation-name: listehover1-2;
+}
+
+@-webkit-keyframes listehover1-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover1-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle1 > :nth-child(3) {
+  -webkit-animation-name: listehover1-3;
+          animation-name: listehover1-3;
+}
+
+@-webkit-keyframes listehover1-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover1-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle1 > :nth-child(4) {
+  -webkit-animation-name: listehover1-4;
+          animation-name: listehover1-4;
+}
+
 /* cunibert */
 .listewrapper2 {
   position: relative !important;
   width: 38.2857142857vw !important;
+  height: 3vw;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -2692,6 +2833,11 @@ footer {
   position: absolute;
   text-align: left;
   z-index: 99;
+}
+
+.listesvg2 {
+  position: absolute;
+  top: -1vw;
 }
 
 .listehover2 {
@@ -2811,10 +2957,12 @@ footer {
 .listewrapper3 {
   position: relative !important;
   width: 21.2857142857vw !important;
+  height: 3vw;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   z-index: 1200;
+  background-color: 0;
 }
 
 .liste3 {
@@ -2822,6 +2970,11 @@ footer {
   position: absolute;
   text-align: left;
   z-index: 99;
+}
+
+.listesvg3 {
+  position: absolute;
+  top: -1vw;
 }
 
 .listehover3 {
@@ -2935,5 +3088,1839 @@ footer {
 .listewiggle3 > :nth-child(4) {
   -webkit-animation-name: listehover3-4;
           animation-name: listehover3-4;
+}
+
+/* headlights */
+.listewrapper4 {
+  position: relative !important;
+  width: 13.2142857143vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+}
+
+.liste4 {
+  width: 13.2142857143vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listesvg4 {
+  position: absolute;
+  top: -1vw;
+}
+
+.listehover4 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover4:hover {
+  opacity: 100%;
+}
+
+.listewiggle4 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover4-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover4-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle4 > :nth-child(1) {
+  -webkit-animation-name: listehover4-1;
+          animation-name: listehover4-1;
+}
+
+@-webkit-keyframes listehover4-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover4-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle4 > :nth-child(2) {
+  -webkit-animation-name: listehover4-2;
+          animation-name: listehover4-2;
+}
+
+@-webkit-keyframes listehover4-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover4-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle4 > :nth-child(3) {
+  -webkit-animation-name: listehover4-3;
+          animation-name: listehover4-3;
+}
+
+@-webkit-keyframes listehover4-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover4-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle4 > :nth-child(4) {
+  -webkit-animation-name: listehover4-4;
+          animation-name: listehover4-4;
+}
+
+/* This is Europe */
+.listewrapper5 {
+  position: relative !important;
+  width: 16vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.liste5 {
+  width: 16vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listesvg5 {
+  position: absolute;
+  top: -1vw;
+}
+
+.listehover5 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover5:hover {
+  opacity: 100%;
+}
+
+.listewiggle5 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover5-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover5-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle5 > :nth-child(1) {
+  -webkit-animation-name: listehover5-1;
+          animation-name: listehover5-1;
+}
+
+@-webkit-keyframes listehover5-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover5-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle5 > :nth-child(2) {
+  -webkit-animation-name: listehover5-2;
+          animation-name: listehover5-2;
+}
+
+@-webkit-keyframes listehover5-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover5-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle5 > :nth-child(3) {
+  -webkit-animation-name: listehover5-3;
+          animation-name: listehover5-3;
+}
+
+@-webkit-keyframes listehover5-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover5-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle5 > :nth-child(4) {
+  -webkit-animation-name: listehover5-4;
+          animation-name: listehover5-4;
+}
+
+/* Digital Typewriter */
+.listewrapper6 {
+  position: relative !important;
+  width: 19.8571428571vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.liste6 {
+  width: 19.8571428571vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listesvg6 {
+  position: absolute;
+  top: -1vw;
+}
+
+.listehover6 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover6:hover {
+  opacity: 100%;
+}
+
+.listewiggle6 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover6-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover6-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle6 > :nth-child(1) {
+  -webkit-animation-name: listehover6-1;
+          animation-name: listehover6-1;
+}
+
+@-webkit-keyframes listehover6-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover6-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle6 > :nth-child(2) {
+  -webkit-animation-name: listehover6-2;
+          animation-name: listehover6-2;
+}
+
+@-webkit-keyframes listehover6-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover6-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle6 > :nth-child(3) {
+  -webkit-animation-name: listehover6-3;
+          animation-name: listehover6-3;
+}
+
+@-webkit-keyframes listehover6-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover6-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle6 > :nth-child(4) {
+  -webkit-animation-name: listehover6-4;
+          animation-name: listehover6-4;
+}
+
+/* Handson Typography */
+.listewrapper7 {
+  position: relative !important;
+  width: 18.7857142857vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.liste7 {
+  width: 18.7857142857vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listesvg7 {
+  position: absolute;
+  top: -0.7vw;
+}
+
+.listehover7 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover7:hover {
+  opacity: 100%;
+}
+
+.listewiggle7 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover7-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover7-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle7 > :nth-child(1) {
+  -webkit-animation-name: listehover7-1;
+          animation-name: listehover7-1;
+}
+
+@-webkit-keyframes listehover7-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover7-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle7 > :nth-child(2) {
+  -webkit-animation-name: listehover7-2;
+          animation-name: listehover7-2;
+}
+
+@-webkit-keyframes listehover7-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover7-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle7 > :nth-child(3) {
+  -webkit-animation-name: listehover7-3;
+          animation-name: listehover7-3;
+}
+
+@-webkit-keyframes listehover7-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover7-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle7 > :nth-child(4) {
+  -webkit-animation-name: listehover7-4;
+          animation-name: listehover7-4;
+}
+
+/* about liste */
+.listewrapper8 {
+  position: relative !important;
+  width: 9.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.liste8 {
+  width: 9.21428571429vw !important;
+  position: absolute;
+  text-align: left;
+  z-index: 99;
+}
+
+.listesvg8 {
+  position: absolute;
+  top: -0.5vw;
+}
+
+.listehover8 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.listehover8:hover {
+  opacity: 100%;
+}
+
+.listewiggle8 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes listehover8-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover8-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.listewiggle8 > :nth-child(1) {
+  -webkit-animation-name: listehover8-1;
+          animation-name: listehover8-1;
+}
+
+@-webkit-keyframes listehover8-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover8-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.listewiggle8 > :nth-child(2) {
+  -webkit-animation-name: listehover8-2;
+          animation-name: listehover8-2;
+}
+
+@-webkit-keyframes listehover8-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover8-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.listewiggle8 > :nth-child(3) {
+  -webkit-animation-name: listehover8-3;
+          animation-name: listehover8-3;
+}
+
+@-webkit-keyframes listehover8-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes listehover8-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listewiggle8 > :nth-child(4) {
+  -webkit-animation-name: listehover8-4;
+          animation-name: listehover8-4;
+}
+
+/* nummer1 */
+.wrappernummer1 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer1 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg1 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer1 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer1:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle1 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle1-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle1-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle1 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle1-1;
+          animation-name: nummer-wiggle1-1;
+}
+
+@-webkit-keyframes nummer-wiggle1-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle1-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle1 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle1-2;
+          animation-name: nummer-wiggle1-2;
+}
+
+@-webkit-keyframes nummer-wiggle1-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle1-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle1 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle1-3;
+          animation-name: nummer-wiggle1-3;
+}
+
+@-webkit-keyframes nummer-wiggle1-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle1-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle1 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle1-4;
+          animation-name: nummer-wiggle1-4;
+}
+
+/* nummer2 */
+.wrappernummer2 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer2 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg2 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer2 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer2:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle2 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle2-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle2-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle2 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle2-1;
+          animation-name: nummer-wiggle2-1;
+}
+
+@-webkit-keyframes nummer-wiggle2-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle2-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle2 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle2-2;
+          animation-name: nummer-wiggle2-2;
+}
+
+@-webkit-keyframes nummer-wiggle2-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle2-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle2 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle2-3;
+          animation-name: nummer-wiggle2-3;
+}
+
+@-webkit-keyframes nummer-wiggle2-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle2-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle2 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle2-4;
+          animation-name: nummer-wiggle2-4;
+}
+
+/* nummer3 */
+.wrappernummer3 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer3 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg3 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer3 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer3:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle3 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle3-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle3-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle3 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle3-1;
+          animation-name: nummer-wiggle3-1;
+}
+
+@-webkit-keyframes nummer-wiggle3-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle3-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle3 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle3-2;
+          animation-name: nummer-wiggle3-2;
+}
+
+@-webkit-keyframes nummer-wiggle3-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle3-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle3 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle3-3;
+          animation-name: nummer-wiggle3-3;
+}
+
+@-webkit-keyframes nummer-wiggle3-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle3-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle3 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle3-4;
+          animation-name: nummer-wiggle3-4;
+}
+
+/* nummer4 */
+.wrappernummer4 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer4 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg4 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer4 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer4:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle4 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle4-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle4-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle4 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle4-1;
+          animation-name: nummer-wiggle4-1;
+}
+
+@-webkit-keyframes nummer-wiggle4-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle4-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle4 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle4-2;
+          animation-name: nummer-wiggle4-2;
+}
+
+@-webkit-keyframes nummer-wiggle4-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle4-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle4 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle4-3;
+          animation-name: nummer-wiggle4-3;
+}
+
+@-webkit-keyframes nummer-wiggle4-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle4-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle4 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle4-4;
+          animation-name: nummer-wiggle4-4;
+}
+
+/* nummer5 */
+.wrappernummer5 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer5 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg5 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer5 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer5:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle5 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle5-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle5-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle5 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle5-1;
+          animation-name: nummer-wiggle5-1;
+}
+
+@-webkit-keyframes nummer-wiggle5-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle5-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle5 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle5-2;
+          animation-name: nummer-wiggle5-2;
+}
+
+@-webkit-keyframes nummer-wiggle5-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle5-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle5 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle5-3;
+          animation-name: nummer-wiggle5-3;
+}
+
+@-webkit-keyframes nummer-wiggle5-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle5-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle5 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle5-4;
+          animation-name: nummer-wiggle5-4;
+}
+
+/* nummer6 */
+.wrappernummer6 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer6 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg6 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer6 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer6:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle6 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle6-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle6-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle6 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle6-1;
+          animation-name: nummer-wiggle6-1;
+}
+
+@-webkit-keyframes nummer-wiggle6-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle6-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle6 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle6-2;
+          animation-name: nummer-wiggle6-2;
+}
+
+@-webkit-keyframes nummer-wiggle6-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle6-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle6 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle6-3;
+          animation-name: nummer-wiggle6-3;
+}
+
+@-webkit-keyframes nummer-wiggle6-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle6-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle6 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle6-4;
+          animation-name: nummer-wiggle6-4;
+}
+
+/* nummer7 */
+.wrappernummer7 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer7 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg7 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer7 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer7:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle7 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle7-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle7-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle7 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle7-1;
+          animation-name: nummer-wiggle7-1;
+}
+
+@-webkit-keyframes nummer-wiggle7-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle7-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle7 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle7-2;
+          animation-name: nummer-wiggle7-2;
+}
+
+@-webkit-keyframes nummer-wiggle7-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle7-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle7 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle7-3;
+          animation-name: nummer-wiggle7-3;
+}
+
+@-webkit-keyframes nummer-wiggle7-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle7-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle7 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle7-4;
+          animation-name: nummer-wiggle7-4;
+}
+
+/* nummer8 */
+.wrappernummer8 {
+  position: relative !important;
+  width: 3.21428571429vw !important;
+  height: 3vw;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  z-index: 1200;
+  background-color: 0;
+}
+
+.nummer8 {
+  width: 3.21428571429vw !important;
+  position: absolute;
+  z-index: 99;
+}
+
+.nummersvg8 {
+  position: absolute;
+  top: 0.7vw;
+  right: 1.2vw;
+}
+
+.hovernummer8 {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hovernummer8:hover {
+  opacity: 100%;
+}
+
+.nummer-wiggle8 > * {
+  stroke-width: 0.2vw;
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  z-index: 100;
+}
+
+@-webkit-keyframes nummer-wiggle8-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle8-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle8 > :nth-child(1) {
+  -webkit-animation-name: nummer-wiggle8-1;
+          animation-name: nummer-wiggle8-1;
+}
+
+@-webkit-keyframes nummer-wiggle8-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle8-2 {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle8 > :nth-child(2) {
+  -webkit-animation-name: nummer-wiggle8-2;
+          animation-name: nummer-wiggle8-2;
+}
+
+@-webkit-keyframes nummer-wiggle8-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle8-3 {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle8 > :nth-child(3) {
+  -webkit-animation-name: nummer-wiggle8-3;
+          animation-name: nummer-wiggle8-3;
+}
+
+@-webkit-keyframes nummer-wiggle8-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nummer-wiggle8-4 {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nummer-wiggle8 > :nth-child(4) {
+  -webkit-animation-name: nummer-wiggle8-4;
+          animation-name: nummer-wiggle8-4;
+}
+
+/* mobile version */
+@media (orientation: portrait) {
+  script {
+    direction: vertical;
+  }
+  body {
+    font-size: 3.4vw;
+  }
+  .startseite-pfeile {
+    display: none;
+  }
+  .contents {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .tabellesvg {
+    width: 83vw;
+    top: 50%;
+    left: 47%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  ol li {
+    line-height: 10vw;
+  }
+  .liste1 {
+    line-height: 10vw;
+  }
+  .liste2 {
+    line-height: 30vw;
+  }
+  .liste3 {
+    line-height: 5vw;
+  }
+  .liste4 {
+    line-height: 5vw;
+  }
+  .liste5 {
+    line-height: 5vw;
+  }
+  .liste6 {
+    line-height: 5vw;
+  }
+  .liste7 {
+    line-height: 5vw;
+  }
+  .liste8 {
+    line-height: 5vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
