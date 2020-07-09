@@ -63,10 +63,10 @@
 
 <div class="swiper-container">
   <div class="swiper-wrapper">
-      <div class="swiper-slide" class="startseite1"> 
 
+<!--Startseite-->
 
-            
+      <div class="swiper-slide">
               <div  class="contents">
                 <div class="tabelle">
                   <div id="startseite" class="tabellesvg">
@@ -390,13 +390,10 @@
           </div>
         </div>
 
-        <div class="backgroundp1" >
-
-        </div>
     </div>    
     
-    
-      <div class="swiper-slide">
+<!--Projekt Rotis -->   
+      <div class="swiper-slide"> 
         
         <div id="rotis" class="slide-text">
           <p> "Rotis Film"<br><br><br>
@@ -435,7 +432,7 @@
 
       </div>
     
-    
+<!--Projekt Xasthur -->     
       <div class="swiper-slide">
 
         <div class="bilder">
@@ -486,6 +483,8 @@
           </div>
         </div>
 
+<!--Projekt Cunibert -->           
+        
         <div class="swiper-slide">
 
           <div class ="cunibert2" class="bilder">
@@ -525,6 +524,8 @@
           </div>
         </div>
 
+<!--About --> 
+
         <div id="about1" class="swiper-slide">
           <div class="about-text">
              <p> "About"<br><br><br>
@@ -548,11 +549,15 @@
               </p>
           </div>
         </div>
+        
 
     </div>
+
     
-    <div class="swiper-button-next"> </div>
-    <div class="swiper-button-prev"> </div>
+<!--buttons -->   
+
+<div class="swiper-button-next"> </div>
+<div class="swiper-button-prev"> </div>
     
    
 </div>
@@ -577,8 +582,44 @@
   </script>
 
 
-  
+<!--Header Footer projektnamen selektiert removeln-->
 
+<script>
+// List of slides, for which we want to hide the
+// navigation (header and footer).
+var hideNavigationFor = [0]
+
+// Show or hide the navigation, depending on the current slide.
+function showHideNavigation() {
+	// The index of the current slide. Note: starts
+  // with 0 (first slide's index = 0)
+	var slideIndex = swiper.activeIndex
+  
+  // If the current slide is included in our list,
+  // we add a class called 'hide-navigation' to the
+  // body, otherwise we remove it. Now we can just
+  // show/hide the navigation with css.
+	if (hideNavigationFor.includes(slideIndex)) {
+  	document.body.classList.add('hide-navigation')
+  } else {
+  	document.body.classList.remove('hide-navigation')
+  }
+}
+
+var swiper = new Swiper('.swiper-container')
+// Everytime swiper changes the slide, we call the
+// 'showHideNavigation' function, which shows or
+// hides the navigation, depending on the current
+// slide.
+swiper.on('slideChange', showHideNavigation)
+
+// We have to call the function manually once at the
+// beginning (If we wan't to hide the navigation for
+// the first slide, because swiper's 'slideChange' only
+// fires if we change to another slide).
+showHideNavigation()
+
+</script>
   <footer>
     <footer>
       <div class="wrappernummer1">
@@ -748,5 +789,6 @@
   </a>
     
   </footer>
+
 </body>
 </html>

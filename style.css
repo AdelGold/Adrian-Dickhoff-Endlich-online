@@ -1,5 +1,16 @@
-.startseite1 {
-  z-index: 1200;
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutcontainer {
+  position: relative !important;
+  top: 5vw !important;
+  width: 9.21428571429vw !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  left: 70vw !important;
 }
 
 .about-text {
@@ -19,23 +30,7 @@ footer {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   z-index: 1000 !important;
-}
-
-div.disabled {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-html, body {
-  position: relative;
-  height: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-a {
-  color: black;
-  text-decoration: none;
+  display: none !important;
 }
 
 header {
@@ -52,31 +47,23 @@ body {
   padding: 0;
 }
 
+html, body {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "RotisFilm";
   src: url("Font/RotisFilm-Regular.otf");
   font-style: normal;
   font-weight: 100;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.aboutcontainer {
-  position: relative !important;
-  top: 5vw !important;
-  width: 9.21428571429vw !important;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  left: 70vw !important;
-}
-
-.cunibert1 {
-  position: absolute;
-  left: 30vw;
 }
 
 /* tabelle seite 1 */
@@ -89,10 +76,9 @@ body {
 }
 
 .contents {
-  position: absolute;
+  position: relative;
   left: 0.7vw;
-  top: 3vw;
-  top: 8vw;
+  top: 12vw;
   left: 10vw;
 }
 
@@ -4932,5 +4918,13 @@ img {
   .liste8 {
     line-height: 5vw;
   }
+}
+
+/* The 'hide-navigation' class is added in
+    javascript. If the body has the class, we
+    hide header and footer. */
+body.hide-navigation header,
+body.hide-navigation footer {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */
