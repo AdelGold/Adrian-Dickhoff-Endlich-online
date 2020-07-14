@@ -40,14 +40,15 @@ header {
 
 body {
   background: #eee;
-  font-family: "RotisFilm";
+  font-family: 'RotisFilm';
   font-size: 1.4vw;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   position: relative;
   height: 100%;
   max-width: 100%;
@@ -60,7 +61,7 @@ a {
 }
 
 @font-face {
-  font-family: "RotisFilm";
+  font-family: 'RotisFilm';
   src: url("Font/RotisFilm-Regular.otf");
   font-style: normal;
   font-weight: 100;
@@ -78,7 +79,7 @@ a {
 .contents {
   position: relative;
   left: 0.7vw;
-  top: 12vw;
+  top: 14vw;
   left: 10vw;
 }
 
@@ -89,7 +90,8 @@ a {
   height: auto;
 }
 
-ol, li {
+ol,
+li {
   line-height: 3vw;
 }
 
@@ -131,15 +133,51 @@ img {
           filter: drop-shadow(0 0 30px #333) !important;
 }
 
+.titelbilder {
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute !important;
+  top: 4.9vw !important;
+  left: 4vw;
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  z-index: 1000 !important;
+  -webkit-filter: drop-shadow(0 0 30px #333) !important;
+          filter: drop-shadow(0 0 30px #333) !important;
+}
+
+.video {
+  height: 80%;
+  position: absolute !important;
+  width: 70%;
+  z-index: 1000 !important;
+  -webkit-filter: drop-shadow(0 0 30px #333) !important;
+          filter: drop-shadow(0 0 30px #333) !important;
+  top: 4.9vw !important;
+  left: 14.9vw;
+}
+
 .pfeile_start {
   height: 60%;
   position: fixed;
 }
 
+.svgname {
+  width: 42vw;
+  height: 10vw;
+  left: 5vw;
+}
+
 .slide-text {
   color: black;
   position: relative;
-  top: 4.9vw !important;
+  top: 8.3vw !important;
   width: 27vw !important;
   left: 17vw;
 }
@@ -2531,7 +2569,7 @@ img {
 
 .namewrapper {
   position: relative !important;
-  top: -3.21429vw !important;
+  top: -3.21428571429vw !important;
   width: 16.2142857143vw !important;
   height: 4.21428571429vw;
   display: -webkit-box !important;
@@ -4867,12 +4905,19 @@ img {
 }
 
 /* mobile version */
-@media (orientation: portrait) {
+@media screen and (min-width: 480px) and (orientation: portrait) {
   script {
     direction: vertical;
   }
   body {
     font-size: 3.4vw;
+  }
+  ol, li {
+    width: 80vw;
+    position: relative;
+    top: -5vw;
+    left: -10vw;
+    line-height: 15vw;
   }
   .startseite-pfeile {
     display: none;
@@ -4891,38 +4936,29 @@ img {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
-  ol li {
-    line-height: 10vw;
+  .titelbilder {
+    display: none !important;
   }
-  .liste1 {
-    line-height: 10vw;
+  .slide-text {
+    color: black;
+    position: relative;
+    top: 18vw !important;
+    width: 67vw !important;
+    left: 19vw;
   }
-  .liste2 {
-    line-height: 30vw;
-  }
-  .liste3 {
-    line-height: 5vw;
-  }
-  .liste4 {
-    line-height: 5vw;
-  }
-  .liste5 {
-    line-height: 5vw;
-  }
-  .liste6 {
-    line-height: 5vw;
-  }
-  .liste7 {
-    line-height: 5vw;
-  }
-  .liste8 {
-    line-height: 5vw;
+  .bottom_text {
+    color: black;
+    position: relative !important;
+    bottom: -20vw !important;
+    width: 47vw !important;
+    left: 19vw;
+    z-index: 1000 !important;
   }
 }
 
 /* The 'hide-navigation' class is added in
-    javascript. If the body has the class, we
-    hide header and footer. */
+      javascript. If the body has the class, we
+      hide header and footer. */
 body.hide-navigation header,
 body.hide-navigation footer {
   display: none !important;
