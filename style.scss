@@ -1,4 +1,4 @@
-.swiper-container {
+  .swiper-container {
     width: 100%;
     height: 100%;
   }
@@ -54,6 +54,11 @@
     text-decoration: none;
   }
   
+  ol,
+  li {
+    line-height: 3vw;
+  }
+  
   @font-face {
     font-family: 'RotisFilm';
     src: url('Font/RotisFilm-Regular.otf');
@@ -83,10 +88,7 @@
     height: auto;
   }
   
-  ol,
-  li {
-    line-height: 3vw;
-  }
+
   
   .swiper-slide {
     background: #eee;
@@ -103,6 +105,16 @@
     z-index: 1000 !important;
   }
   
+  .startname {
+    position: absolute !important;
+    text-align: center;
+    z-index: 99 !important; 
+    width: 16.2142857143vw !important;
+    height: 4.21428571429vw;
+    left: 3.5vw !important; 
+    top: 1vw; 
+  }
+
   .bilder {
     height: 80%;
     object-fit: contain;
@@ -3291,40 +3303,88 @@
   
   /* mobile version */
 
-  @media screen and (min-width: 480px) and (orientation: portrait) {
+.mobilelist {
+  display: none !important;
+}
+
+.tabellemobile {
+  display: none !important;
+}
+
+@media screen and (min-width: 600px) and (orientation: portrait) {
     script {
       direction:vertical;
     }
-  
-    body {
-        font-size: 3.4vw;
-          
+
+.about-text {
+  width: 75vw;
+}
+
+    .mobilelist{
+      display: flex !important;
+      position: absolute;
+      top: 30vw !important;
+      left: 19vw !important;
+      width: 70vw;
+      z-index: 1500;
+      
+    }
+
+    ol,
+    li {
+      line-height: 9vw;
+    }
+
+    .tabellemobile {
+      display: flex !important;
+      position: absolute;
+      top: 36vw !important;
+      left: 11vw;
+    }
+
+   
+
+    .swiper-button-next {
+      display: none !important;
+    }
+
+    .swiper-button-prev {
+      display: none !important;
     }
     
-    ol, li {
-      width: 80vw;
-      position: relative;
-      top: -5vw;
-      left: -10vw;
-      line-height: 15vw;
+    body {
+      background: #eee;
+      font-family: 'RotisFilm';
+      font-size: 4vw;
+      color: #000;
+      margin: 0;
+      padding: 0;
     }
+    
+ .name {
+   width:40vw !important;
+ }
+ 
+ .startname {
+  position: absolute !important;
+  text-align: center;
+  z-index: 99 !important; 
+  width: 40vw !important;
+  height: 4.21428571429vw;
+  left: 3.5vw !important; 
+  top: 1vw; 
+}
+
+.about {
+  right: 4.4vw;
+}
 
     .startseite-pfeile {
         display: none;
     }
 
     .contents {
-      position: absolute;
-      top: 50%;
-      left: 47%;
-      transform: translate(-50%, -50%);
-    }
-
-    .tabellesvg {
-      width: 83vw;
-      top: 50%;
-      left: 47%;
-      transform: translate(-50%, -50%);
+      display: none !important;
     }
   
     .titelbilder {
@@ -3352,8 +3412,7 @@
   /* The 'hide-navigation' class is added in
       javascript. If the body has the class, we
       hide header and footer. */
-  body.hide-navigation header,
+  body.hide-navigation header, 
   body.hide-navigation footer {
     display: none !important;
   }
-  
