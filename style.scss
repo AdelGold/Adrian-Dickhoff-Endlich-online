@@ -11,11 +11,25 @@
     left: 70vw !important;
   }
   
-  .about-text {
+  .aboutpage {
     position: relative;
-    top: 10vw;
-    left: 15vw;
+    left: 6.5vw;
+    top: 11vw;
+    width: 45vw;
+    
   }
+  .about-text {
+    position: absolute; 
+    width: 45vw;
+    display: flex;  
+  }
+
+  .tabelle_about {
+    top: 2vw;
+    position: absolute;
+    
+  }
+  
   
   footer {
     position: fixed !important;
@@ -116,24 +130,26 @@
   }
 
   .bilder {
-    height: 80%;
+    height: 90%;
     object-fit: contain;
-    position: fixed !important;
-    top: 4.9vw !important;
-    width: 100%;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50%;
+    width: 90%;
     display: flex !important;
     justify-content: center !important;
     z-index: 1000 !important;
     filter: drop-shadow(0 0 30px #333) !important;
+    transform: translate(-50%, -50%);
   }
 
   .titelbilder {
-    height: 80%;
+    height: 90%;
     object-fit: contain;
     position: absolute !important;
     top: 4.9vw !important;
     left: 4vw;
-    width: 100%;
+    width: 90%;
     display: flex !important;
     justify-content: center !important;
     z-index: 1000 !important;
@@ -181,9 +197,9 @@
   }
   
   .swiper-button-prev {
-    background: url('pictures/arrow_left.png');
-    width: 9.5vw !important;
-    height: 9.5vw !important;
+    background: url('pictures/SVG/pfeil_links.svg');
+    width: 6.07vw  !important;
+    height: 100% !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
   }
@@ -198,8 +214,8 @@
   
   .swiper-button-next {
     background: url('pictures/arrow_right.png');
-    width: 9.5vw !important;
-    height: 9.5vw !important;
+    width: 6.07vw !important;
+    height: 6.07vw !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     display: none;
@@ -1606,15 +1622,6 @@
   
   /* about */
   
-  .hoverabout {
-    opacity: 0;
-    z-index: 1000;
-  }
-  
-  .hoverabout:hover {
-    opacity: 100%;
-  }
-  
   .aboutwrapper {
     position: relative !important;
     top: 1vw !important;
@@ -1629,7 +1636,29 @@
     height: 4.21428571429vw;
     position: absolute;
     text-align: center;
-    z-index: 999;
+    z-index: 99;
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  .lastpagepfeil {
+    position: absolute;
+    top: 1.2vw;
+    right: -0.4vw;
+  }
+
+  .aboutsvg {
+    position: absolute;
+    
+  }
+  
+  .hoverabout {
+    opacity: 0;
+    z-index: 1000;
+  }
+  
+  .hoverabout:hover {
+    opacity: 100%;
   }
   
   .about-wiggle > * {
@@ -1638,62 +1667,50 @@
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(1);
-    z-index: 1000;
+    z-index: 100;
   }
   
-  @keyframes about-hover-1 {
+  @keyframes hoverabout-1 {
     0% {
       opacity: 1;
     }
-    20% {
+    25% {
       opacity: 0;
     }
   }
   
-  .about-wiggle > :nth-child(1) {
-    animation-name: about-hover-1;
+  .hoverabout > :nth-child(1) {
+    animation-name: hoverabout-1;
   }
   
-  @keyframes about-hover-2 {
-    20% {
+  @keyframes hoverabout-2 {
+    25% {
       opacity: 1;
     }
-    40% {
+    50% {
       opacity: 0;
     }
   }
-  .about-wiggle > :nth-child(2) {
-    animation-name: about-hover-2;
+  
+  .hoverabout > :nth-child(2) {
+    animation-name: hoverabout-2;
   }
   
-  @keyframes about-hover-3 {
-    40% {
+  @keyframes hoverabout-3 {
+    50% {
       opacity: 1;
     }
-    60% {
+    75% {
       opacity: 0;
     }
   }
   
-  .about-wiggle > :nth-child(3) {
-    animation-name: about-hover-3;
+  .hoverabout > :nth-child(3) {
+    animation-name: hoverabout-3;
   }
   
-  @keyframes about-hover-4 {
-    60% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 0;
-    }
-  }
-  
-  .about-wiggle > :nth-child(4) {
-    animation-name: about-hover-4;
-  }
-  
-  @keyframes about-hover-5 {
-    80% {
+  @keyframes hoverabout-4 {
+    75% {
       opacity: 1;
     }
     100% {
@@ -1701,10 +1718,10 @@
     }
   }
   
-  .about-wiggle > :nth-child(5) {
-    animation-name: about-hover-5;
+  .hoverabout > :nth-child(4) {
+    animation-name: hoverabout-4;
   }
-  
+
   /* homenamebutton */
   
   .hovername {
@@ -1719,7 +1736,7 @@
   .namewrapper {
     position: relative !important;
     top: -3.21428571429vw !important;
-    width: 16.2142857143vw !important;
+    
     height: 4.21428571429vw;
     display: flex !important;
     left: 3.5vw !important;
@@ -1730,10 +1747,22 @@
     height: 4.21428571429vw;
     position: absolute;
     text-align: center;
-    left: -1vw;
     z-index: 99;
+    display: flex;
+    justify-content: space-around;
   }
   
+  .namesvg {
+    position: absolute;
+    left:-3vw;
+  }
+
+  .homepfeil {
+    position: absolute;
+    top: 1.2vw;
+    left: -0.4vw;
+  }
+
   .name-wiggle > * {
     stroke-width: 0.2vw;
     opacity: 0;
@@ -3415,4 +3444,133 @@
   body.hide-navigation header, 
   body.hide-navigation footer {
     display: none !important;
+  }
+
+
+
+
+  /* Portrait */
+
+
+  .portrait {
+position: relative;
+left: 57vw;
+top: 8.5vw;
+
+.portraitzeichnen > :nth-child(7) {
+  stroke-width: 0.3vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: zeichnen3 1.8s linear forwards;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+}
+
+.portraitzeichnen > :nth-child(8) {
+  stroke-width: 0.3vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: zeichnen3 1.6s linear forwards;
+  animation-delay: 4.5s;
+  animation-iteration-count: 1;
+}
+
+.portraitzeichnen > :nth-child(9) {
+  stroke-width: 0.3vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: zeichnen3 2s linear forwards;
+  animation-delay: 5.2s;
+  animation-iteration-count: 1;
+}
+
+.portraitzeichnen > :nth-child(10) {
+  stroke-width: 0.3vw;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: zeichnen3 2.5s linear forwards;
+  animation-delay: 5.7s;
+  animation-iteration-count: 1;
+}
+  }
+  .portraitzeichnen > :nth-child(1) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: zeichnen3 2s linear forwards;
+    animation-delay: 6.1s;
+    animation-iteration-count: 1;
+  }
+  
+  .portraitzeichnen > :nth-child(2) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: zeichnen3 2.6s linear forwards;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+  }
+
+  
+  .portraitzeichnen > :nth-child(3) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: zeichnen3 3s linear forwards;
+    animation-delay: 10.5s;
+    animation-iteration-count: 1;
+  }
+
+  .portraitzeichnen > :nth-child(4) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: zeichnen3 3s linear forwards;
+    animation-delay: 13.8s;
+    animation-iteration-count: 1;
+  }
+
+
+  .portraitzeichnen > :nth-child(12) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: zeichnen3 1.7s linear forwards;
+    animation-delay: 14.5s;
+    animation-iteration-count: 1;
+  }
+
+  .portraitzeichnen > :nth-child(5) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: zeichnen3 4s linear forwards;
+    animation-delay: 17.2s;
+    animation-iteration-count: 1;
+  }
+
+  .portraitzeichnen > :nth-child(6) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: zeichnen3 7s linear forwards;
+    animation-delay: 22.2s;
+    animation-iteration-count: 1;
+  }
+
+  .portraitzeichnen > :nth-child(11) {
+    stroke-width: 0.3vw;
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: zeichnen3 2.5s linear forwards;
+    animation-delay: 28.2s;
+    animation-iteration-count: 1;
+  }
+
+
+
+  @keyframes zeichnen3 {
+    to {
+      stroke-dashoffset: 000;
+    }
   }

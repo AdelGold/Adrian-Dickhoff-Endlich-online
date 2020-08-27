@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../animation_svg_test"
+		},
+		{
+			"path": "../../../../noanimation_dog_ball"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Adrian-Dickhoff-Endlich-online"
+	}
+}

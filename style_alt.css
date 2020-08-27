@@ -13,24 +13,10 @@
   left: 70vw !important;
 }
 
-.aboutpage {
-  position: relative;
-  left: 6.5vw;
-  top: 11vw;
-  width: 45vw;
-}
-
 .about-text {
-  position: absolute;
-  width: 45vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.tabelle_about {
-  top: 2vw;
-  position: absolute;
+  position: relative;
+  top: 10vw;
+  left: 15vw;
 }
 
 footer {
@@ -54,15 +40,14 @@ header {
 
 body {
   background: #eee;
-  font-family: 'RotisFilm';
+  font-family: "RotisFilm";
   font-size: 1.4vw;
   color: #000;
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
+html, body {
   position: relative;
   height: 100%;
   max-width: 100%;
@@ -74,13 +59,8 @@ a {
   text-decoration: none;
 }
 
-ol,
-li {
-  line-height: 3vw;
-}
-
 @font-face {
-  font-family: 'RotisFilm';
+  font-family: "RotisFilm";
   src: url("Font/RotisFilm-Regular.otf");
   font-style: normal;
   font-weight: 100;
@@ -92,13 +72,14 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: red;
   width: 41.5vw;
 }
 
 .contents {
   position: relative;
   left: 0.7vw;
-  top: 14vw;
+  top: 12vw;
   left: 10vw;
 }
 
@@ -107,6 +88,11 @@ li {
   top: 1.8vw;
   width: 41.5vw;
   height: auto;
+}
+
+ol, li {
+  line-height: 3vw;
+  width: 41.5vw;
 }
 
 .swiper-slide {
@@ -129,24 +115,13 @@ img {
   z-index: 1000 !important;
 }
 
-.startname {
-  position: absolute !important;
-  text-align: center;
-  z-index: 99 !important;
-  width: 16.2142857143vw !important;
-  height: 4.21428571429vw;
-  left: 3.5vw !important;
-  top: 1vw;
-}
-
 .bilder {
-  height: 90%;
+  height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50%;
-  width: 90%;
+  position: fixed !important;
+  top: 4.9vw !important;
+  width: 100%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -156,18 +131,15 @@ img {
   z-index: 1000 !important;
   -webkit-filter: drop-shadow(0 0 30px #333) !important;
           filter: drop-shadow(0 0 30px #333) !important;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .titelbilder {
-  height: 90%;
+  height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
-  position: absolute !important;
+  position: fixed !important;
   top: 4.9vw !important;
-  left: 4vw;
-  width: 90%;
+  width: 100%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -177,17 +149,6 @@ img {
   z-index: 1000 !important;
   -webkit-filter: drop-shadow(0 0 30px #333) !important;
           filter: drop-shadow(0 0 30px #333) !important;
-}
-
-.video {
-  height: 80%;
-  position: absolute !important;
-  width: 70%;
-  z-index: 1000 !important;
-  -webkit-filter: drop-shadow(0 0 30px #333) !important;
-          filter: drop-shadow(0 0 30px #333) !important;
-  top: 4.9vw !important;
-  left: 14.9vw;
 }
 
 .pfeile_start {
@@ -195,16 +156,10 @@ img {
   position: fixed;
 }
 
-.svgname {
-  width: 42vw;
-  height: 10vw;
-  left: 5vw;
-}
-
 .slide-text {
   color: black;
   position: relative;
-  top: 8.3vw !important;
+  top: 4.9vw !important;
   width: 27vw !important;
   left: 17vw;
 }
@@ -219,9 +174,9 @@ img {
 }
 
 .swiper-button-prev {
-  background: url("pictures/SVG/pfeil_links.svg");
-  width: 6.07vw  !important;
-  height: 100% !important;
+  background: url("pictures/arrow_left.png");
+  width: 9.5vw !important;
+  height: 9.5vw !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
 }
@@ -236,8 +191,8 @@ img {
 
 .swiper-button-next {
   background: url("pictures/arrow_right.png");
-  width: 6.07vw !important;
-  height: 6.07vw !important;
+  width: 9.5vw !important;
+  height: 9.5vw !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   display: none;
@@ -2429,6 +2384,15 @@ img {
 }
 
 /* about */
+.hoverabout {
+  opacity: 0;
+  z-index: 1000;
+}
+
+.hoverabout:hover {
+  opacity: 100%;
+}
+
 .aboutwrapper {
   position: relative !important;
   top: 1vw !important;
@@ -2445,31 +2409,7 @@ img {
   height: 4.21428571429vw;
   position: absolute;
   text-align: center;
-  z-index: 99;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.lastpagepfeil {
-  position: absolute;
-  top: 1.2vw;
-  right: -0.4vw;
-}
-
-.aboutsvg {
-  position: absolute;
-}
-
-.hoverabout {
-  opacity: 0;
-  z-index: 1000;
-}
-
-.hoverabout:hover {
-  opacity: 100%;
+  z-index: 999;
 }
 
 .about-wiggle > * {
@@ -2481,80 +2421,103 @@ img {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: steps(1);
           animation-timing-function: steps(1);
-  z-index: 100;
+  z-index: 1000;
 }
 
-@-webkit-keyframes hoverabout-1 {
+@-webkit-keyframes about-hover-1 {
   0% {
     opacity: 1;
   }
-  25% {
+  20% {
     opacity: 0;
   }
 }
 
-@keyframes hoverabout-1 {
+@keyframes about-hover-1 {
   0% {
     opacity: 1;
   }
-  25% {
+  20% {
     opacity: 0;
   }
 }
 
-.hoverabout > :nth-child(1) {
-  -webkit-animation-name: hoverabout-1;
-          animation-name: hoverabout-1;
+.about-wiggle > :nth-child(1) {
+  -webkit-animation-name: about-hover-1;
+          animation-name: about-hover-1;
 }
 
-@-webkit-keyframes hoverabout-2 {
-  25% {
+@-webkit-keyframes about-hover-2 {
+  20% {
     opacity: 1;
   }
-  50% {
+  40% {
     opacity: 0;
   }
 }
 
-@keyframes hoverabout-2 {
-  25% {
+@keyframes about-hover-2 {
+  20% {
     opacity: 1;
   }
-  50% {
+  40% {
     opacity: 0;
   }
 }
 
-.hoverabout > :nth-child(2) {
-  -webkit-animation-name: hoverabout-2;
-          animation-name: hoverabout-2;
+.about-wiggle > :nth-child(2) {
+  -webkit-animation-name: about-hover-2;
+          animation-name: about-hover-2;
 }
 
-@-webkit-keyframes hoverabout-3 {
-  50% {
+@-webkit-keyframes about-hover-3 {
+  40% {
     opacity: 1;
   }
-  75% {
+  60% {
     opacity: 0;
   }
 }
 
-@keyframes hoverabout-3 {
-  50% {
+@keyframes about-hover-3 {
+  40% {
     opacity: 1;
   }
-  75% {
+  60% {
     opacity: 0;
   }
 }
 
-.hoverabout > :nth-child(3) {
-  -webkit-animation-name: hoverabout-3;
-          animation-name: hoverabout-3;
+.about-wiggle > :nth-child(3) {
+  -webkit-animation-name: about-hover-3;
+          animation-name: about-hover-3;
 }
 
-@-webkit-keyframes hoverabout-4 {
-  75% {
+@-webkit-keyframes about-hover-4 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes about-hover-4 {
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.about-wiggle > :nth-child(4) {
+  -webkit-animation-name: about-hover-4;
+          animation-name: about-hover-4;
+}
+
+@-webkit-keyframes about-hover-5 {
+  80% {
     opacity: 1;
   }
   100% {
@@ -2562,8 +2525,8 @@ img {
   }
 }
 
-@keyframes hoverabout-4 {
-  75% {
+@keyframes about-hover-5 {
+  80% {
     opacity: 1;
   }
   100% {
@@ -2571,9 +2534,9 @@ img {
   }
 }
 
-.hoverabout > :nth-child(4) {
-  -webkit-animation-name: hoverabout-4;
-          animation-name: hoverabout-4;
+.about-wiggle > :nth-child(5) {
+  -webkit-animation-name: about-hover-5;
+          animation-name: about-hover-5;
 }
 
 /* homenamebutton */
@@ -2588,7 +2551,8 @@ img {
 
 .namewrapper {
   position: relative !important;
-  top: -3.21428571429vw !important;
+  top: -3.21429vw !important;
+  width: 16.2142857143vw !important;
   height: 4.21428571429vw;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -2601,23 +2565,8 @@ img {
   height: 4.21428571429vw;
   position: absolute;
   text-align: center;
+  left: -1vw;
   z-index: 99;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.namesvg {
-  position: absolute;
-  left: -3vw;
-}
-
-.homepfeil {
-  position: absolute;
-  top: 1.2vw;
-  left: -0.4vw;
 }
 
 .name-wiggle > * {
@@ -4938,77 +4887,36 @@ img {
 }
 
 /* mobile version */
-.mobilelist {
-  display: none !important;
-}
-
-.tabellemobile {
-  display: none !important;
-}
-
-@media screen and (min-width: 600px) and (orientation: portrait) {
+@media screen and (min-width: 480px) and (orientation: portrait) {
   script {
     direction: vertical;
   }
-  .about-text {
-    width: 75vw;
-  }
-  .mobilelist {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    position: absolute;
-    top: 30vw !important;
-    left: 19vw !important;
-    width: 70vw;
-    z-index: 1500;
-  }
-  ol,
-  li {
-    line-height: 9vw;
-  }
-  .tabellemobile {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    position: absolute;
-    top: 36vw !important;
-    left: 11vw;
-  }
-  .swiper-button-next {
-    display: none !important;
-  }
-  .swiper-button-prev {
-    display: none !important;
-  }
   body {
-    background: #eee;
-    font-family: 'RotisFilm';
-    font-size: 4vw;
-    color: #000;
-    margin: 0;
-    padding: 0;
+    font-size: 3.4vw;
   }
-  .name {
-    width: 40vw !important;
-  }
-  .startname {
-    position: absolute !important;
-    text-align: center;
-    z-index: 99 !important;
-    width: 40vw !important;
-    height: 4.21428571429vw;
-    left: 3.5vw !important;
-    top: 1vw;
-  }
-  .about {
-    right: 4.4vw;
+  ol, li {
+    width: 80vw;
+    position: relative;
+    top: -5vw;
+    left: -10vw;
+    line-height: 15vw;
   }
   .startseite-pfeile {
     display: none;
   }
   .contents {
-    display: none !important;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .tabellesvg {
+    width: 83vw;
+    top: 50%;
+    left: 47%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .titelbilder {
     display: none !important;
@@ -5031,167 +4939,10 @@ img {
 }
 
 /* The 'hide-navigation' class is added in
-      javascript. If the body has the class, we
-      hide header and footer. */
+    javascript. If the body has the class, we
+    hide header and footer. */
 body.hide-navigation header,
 body.hide-navigation footer {
   display: none !important;
 }
-
-/* Portrait */
-.portrait {
-  position: relative;
-  left: 57vw;
-  top: 8.5vw;
-}
-
-.portrait .portraitzeichnen > :nth-child(7) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: zeichnen3 1.8s linear forwards;
-          animation: zeichnen3 1.8s linear forwards;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portrait .portraitzeichnen > :nth-child(8) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: zeichnen3 1.6s linear forwards;
-          animation: zeichnen3 1.6s linear forwards;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portrait .portraitzeichnen > :nth-child(9) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: zeichnen3 2s linear forwards;
-          animation: zeichnen3 2s linear forwards;
-  -webkit-animation-delay: 5.2s;
-          animation-delay: 5.2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portrait .portraitzeichnen > :nth-child(10) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: zeichnen3 2.5s linear forwards;
-          animation: zeichnen3 2.5s linear forwards;
-  -webkit-animation-delay: 5.7s;
-          animation-delay: 5.7s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(1) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: zeichnen3 2s linear forwards;
-          animation: zeichnen3 2s linear forwards;
-  -webkit-animation-delay: 6.1s;
-          animation-delay: 6.1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(2) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: zeichnen3 2.6s linear forwards;
-          animation: zeichnen3 2.6s linear forwards;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(3) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: zeichnen3 3s linear forwards;
-          animation: zeichnen3 3s linear forwards;
-  -webkit-animation-delay: 10.5s;
-          animation-delay: 10.5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(4) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 800;
-  stroke-dashoffset: 800;
-  -webkit-animation: zeichnen3 3s linear forwards;
-          animation: zeichnen3 3s linear forwards;
-  -webkit-animation-delay: 13.8s;
-          animation-delay: 13.8s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(12) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-  -webkit-animation: zeichnen3 1.7s linear forwards;
-          animation: zeichnen3 1.7s linear forwards;
-  -webkit-animation-delay: 14.5s;
-          animation-delay: 14.5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(5) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-  -webkit-animation: zeichnen3 4s linear forwards;
-          animation: zeichnen3 4s linear forwards;
-  -webkit-animation-delay: 17.2s;
-          animation-delay: 17.2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(6) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 10000;
-  stroke-dashoffset: 10000;
-  -webkit-animation: zeichnen3 7s linear forwards;
-          animation: zeichnen3 7s linear forwards;
-  -webkit-animation-delay: 22.2s;
-          animation-delay: 22.2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-.portraitzeichnen > :nth-child(11) {
-  stroke-width: 0.3vw;
-  stroke-dasharray: 10000;
-  stroke-dashoffset: 10000;
-  -webkit-animation: zeichnen3 2.5s linear forwards;
-          animation: zeichnen3 2.5s linear forwards;
-  -webkit-animation-delay: 28.2s;
-          animation-delay: 28.2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-@keyframes zeichnen3 {
-  to {
-    stroke-dashoffset: 000;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_alt.css.map */
